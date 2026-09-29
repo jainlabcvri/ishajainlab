@@ -773,7 +773,828 @@ dialog.lightbox::backdrop { background: rgba(11,47,71,.94); }
 </script>
 </head>
 <body data-page="index">
-<div id="app"></div>
+<div id="app"><section class="hero" id="hero">
+      
+      <div class="hero-bg" role="img" aria-label="Painting of a mountain landscape shifting from deep blue to bright orange" style="background-image:url('data:image/webp;base64,UklGRsI/AABXRUJQVlA4ILY/AAAwZwKdASrAA+wEPnk8m0qkoywnITFYeYAPCWlu/8blX7S//rTN/nqv/L+VC54B8qL03bd0X/dr5MBD9Dv/CnKxftmEi6rXhOeH8fxzeZ3tyL6v5LPjndP8B6LVfpfHvx/kf8DyBkh3kLJv6Q8+P/M0uen3gH44AvtsJKBo7LGClfJM0Dy921HvMJCRj4MUfOByG7Cgzli8CXa6/mh0Q8lvg5XZYHpDSXiVQw8r7/hg/Z7CdKAU0ihGJDxr1SjAJooCJi29m7izeEIabPkqEXW0ZsLS9fpXkyuTc+iiy0XvbN/fxFff3pDQ9FqMPXWnNgVFQmC0BsCFuLO61+uLlWzMDe94WJ0xFKVheL0rk3vR+0IiTtposwn7Vpqo0Zc/qW4MUl4dIbSGSxgE8PN8tyfcn2ts+mCpJnVxlH7/TUdnvDQrVgUlhltZzB5oH4P39+GdcnK+3DZ/dXdIXHgtQ807964qYSWzX6uQ/753QETeOu3GFFqz3QND95dPe+RiDZWNPoGFD1Zvro2JD8GWE2GTc8BrYkfsgM06iaI9/bcpnwY7jlH73tRUA0yobE2uVx7iFQuIK9x9eQT140/5g7dnNX9RNssaurAfcRO0wj5oxRduxC2cgwUIt/Hhtkre6xZg3ncdzsEfo5W0ZZVf17rb1HiBA/o1VqgyKSh7IxVGmlrkjoCDcfH04nQwSUQgCjcjjbsClnjQLuI82GFXgFb5wFKKvIr2MfgJHRhICt1IA9U59RHHZu9BM0CUqnR4C7RcRhaFIm1EzRthhZ7mrbZ0tOTgNU6MyWCt43XZsIcCWsnrbXvOivPC44C2lz0VQZ7nARNBegef8YCD7BnyaKHgydqqaPrIAJvvvZoRjn5vGjCt1oAyQs8SLPGdlxrCSg/0La54jue9AchtP30Sclt9oEpWeT0U01feg+qJHMLCH90/F4/vGX/5yvkQbB1kdgGxToOXcq8xAWBbc4EzbBBHUav7zrO+jr8C+n/+/u3t9rHxcqlWnOuFMrKeEDlnxjApSWFayP0u2bcV3sZ0c/1/35Ctpmnn/uB8hECWFZjyCcFLZiXpyqUchcsG3Ix1bHkvS7ZkPA5fR0EzQJSs8nAedaI1l5b7exnQ4GPponoUhHFZETHlr3m65DZSjoJ3//ptGr+87SowEDyBbavRhZqXPvqIvnUdkopzfKY2hbVC6n7TqRuMXVV7v71MZz74wraNXroWlNRQODoZ76/kB8GkY1lFKDB4de7FSkNVqFLJ1gh//2P2n3E4eMsc1FHwjuHdWmJcuIHSbbWROZnnxUmJz+0+inZedBqwol4Lsgwqlu6W0RWD9RKDgnPfupmlZNkV6etf6zQVv/5BN00tWx1Gr/B9SuJQE7v7zo4KgX4yK852sUvMQKThMkFWQOiQ3ernP///ru/6zj/YTvX8MvtJHpKFAAE8v7GgE2IxBgVR3juYltNeRyFrsrZYmaFMvA8hjBX4cVvQjFyzZ294wA0AGD2xOjnAAIDhshXqIqND2u4zj/O/wA/zcwltVy7QV039LC+R0P7CtfVUEsmXLlgjPonoQ117GcmUxjnd+k7/xDua4gCFyKi1p9pE0/HmfcbtOxisvj+/uPI4rDrK9HWeu2cHQxqE1RgPPmAH44Kj90gEAhOI3zjZML9sEuBPhytWUjgjIaHVYYDmkU61pyFTb2J5kGw1AsJL/6X7FjRnwYBBDK2CI3Nd1/vcOPcSfoYNm/srrw2PK34spSP/DPrTMxt9b09SpvqTXHGyWguAJidFZYQjq2Lc7HiK4n82wvYRZf7BWIBlW0CqVBfPN3OEd+oqmMSqxANlOHiRkG/WJojwu/f/fkNA62jTEayDIstPyhzM6RgQEBL4+ZA6zW2XQBcR9tiCI47EwFkgVlZkvG2eUtrheQruFa9ek//eye/lQQLlcLWjPYBoMCqi7wZVCUFnSshiK2oA5WDoHm7E7OaR1AxNmcF5q1Qd1RuwZaMKxSi9iC54y0N6QMfqyIv6rHudKCJ7LP45xgmtz5RYQNEYPS5LtWXnBkUZkbOgz1mUvvM1plNhURI3Y4AMoGC37469w4MYUpAjQYwREDLtprFu6BJDEVm4DI50hjymcS/1nPn08+UY1n+FFdOvTHeXa9Vhb6dC970ZwX54LeYIMn7E6RqZCcKjKOKF5U6uc3nL/R++Wd3utYn7JCK4JS3ha17JDOjfzhF/FVsdQlQri3HmYoNBQWCqzW2mpf7xlU5yxTkPj1olvGQZq80x1y23fzl6yRz6amp9dYtdwAAQ7QDWVMBtfiraozcw1oKRGULZnLPe/pie4KnPU2MtW8HpYnr/bVgkI5ZEvrcXiYEF/M2hJMOJHf0qlyHOsEmNrMZnjaH/WC2XZYOh45tu23yD/T6IT0Uiukzy/96Fu//yEYhQf9nJiAwCGeVeF14nMCfOfonlP7ZpOtpYLFDPkQAQGjda//EI/sgDrREnGohVW5cVJaE2t1ZPvX2StamuwYyZVZYtKWdDsDQfUqtd+ftVe9L5O01LiN4WtS7I+kvJrIEJx3I5rKQnV9tbf47qkJn4zNa4J5gmeBwZhhmJW//ZS9vEVAJ8+U6b5BlYyuqeLIOD/8fkuvmcSq/oad2P278Gcf1lVyUrXIh7ZwD9ygF4hx2zlBcT9PqfttOSrirnlu/gzlWbuyPLjXB0ILM6tI9h7KzzxVaXTxpge+BdKmzGwTEO6qzA6AYY+0Q6d//l395cnmcDAJ+d3b2vciw7GCgAFKpbIwyvZH9z40qND53Joiz1YOyPKMlAN1c+9XrDtxSmP0197bSfMqlZWE0w7xKlk5eeyz83w/+i3fRHfWfPlYiJ64X22o9Cpcdtm3vxDPrfjykQl6gwK5m+hJqcAmIlzzqayoDe+l3vJwM6Hw4B6w7akeda8DXZMVYhSSEPiZOIoVYk0iOHFl55jTkdwzxSPGqCrRvCfJPU4tjmhulX1s0vv+7L9IECM1wGxVqNtU4GNykONCL5dtW3GurDvwjXepYBRh7dkqbYAkQ51bsHzKqDESBFxf2uLm1AcBjWjqpgGy/S+Yr0XWpUlR5SSChP6NAZQS/VbgbNMjiuAToLU4nMua+ESiYBkJebGU+sPpVYy232jzuJLOhhRjh7qkoJjbj4XraK3d50ar9nuHgiqNs9VlVHgNbf6PLAvNWktCb+8Mf5Ubj9bcd3ev6mP9YlSSeQYtDFedBiPHWcZIJWHKLr8xgbAf6z43Wm5d/oWsqDOynpJ12F8GfvY2DTF/IDi17fX1V0x1pZ7WWSwT46yw5ySrqOBggj13FgISLEa8hFVm7c3f3hC9E6XL4P6V2lH2V3N+7b4d90cnMQN4W4vFi4ZLPDQMAbsu/1XfhQWhV8eqhuvJAJ2oMYfZuiPrXRKxURjoPBwApjdBeuleijiK7y9cXwWrP0+63bj7ryEzF3WdCKY8Ds3bljrcm/nsZhEsxokrMQBxwEhMKWvSL2s4wKcZlXyQt+3t2DSpY0NAsjLCime96MlY995JhM56bmpCBT4L0okTpmVpCVxR/tUFau+izKfHT0n7hlxKfaabXLs4JQUSN1Ak7PeaPf2AEcwDqt+ZTLOYSP8WjlU6ok1IsHR/F7Y3AQUv6fVeMAySerYwOMlX4xjZ9cMKxSpNOGIjgCq18ZMhNN04e106Ilu8yjUSh/+/7czA7388p+dniJEgJpp8U8HG01YkBS21XLCYz9LwUJhcuySD+v9My9HaAnl6x5FEyl+XSfbDHPLtZ6Unwbu2XwQ4t22hYn4ZqXeANIUSWp6i9M367SIR4ZSkTyKjfQAKWwszZaIK5GubDEtp3u6ol6NLxxB/PIyY+OJgt6fCOKnoPyY1X/6pgHQW8n3j2jf3RN2gOGVuSxadfZEdoPmGh+nBPf6pv+pPn5eEhVzCaoTAZ/EiX438ufVROPkiEoFZFNhhEOAxYWzAmIoOZCiqYYwRg9WV1xXouMNGykOhZszTOH8Q9+fmg5mz6K/iY4gXU9by4VXiL9D4cBMAcbID69Xoivv5VXIuM2lxCzIOjZECkjZgDKpCSD/PTLNDi3t7bovA067CBeByvHrnuT/JBz+84dhlZJfqI4d3Tj7uIL+VEpDta+4j9q1RiH9C610RdjQwzYRQLkUkGZkp2L3GnEziu+tsktqe45myyQpbv5eLvyzXnw2SuqY0yrvPQNjYeW16Rg80j69vG6Lz2Tqkl2WnaMm1ISKNDiCs+R6xrXAaDuOVupr4bWWSJ3YG/iY34DTWqXWAguMu0QWyAxsjAod6cQfz5uNqPjvaeDMNZG72s7SH97PZtQWrwZnogWWJQThSJwJq4HkR9c4DtMReds5A/xv8YJ6IrPmAmtkS8hp9QiL8R8E8OMMQS3m2bcj8+SD+fKExx6xpa0gw0MTAuHKMImMJWYtfWuiQCyo+jDIUkhD62EkLk10cFmexQCyoe8Ggx7zCXNuSEX3QcaUXevnoLet0uiPsSlhFTNogp5S5m2pLQissp2FxydGSFJbzsJ7yJn0FukZ1suPoY5PQElacMpWP7w1wIP/R+3mEhO8fgY5LvH1sTUvvhJLaiKCPU+XYvTGPO1ksBkCBXisq5D8gPTtBxGvFS5X8+SILkr/kC1m3x3tfBHdhKSW+W82sq50YEPbvtHBsKJSApI9hCWX0W2NLBPLMjL41fzohQUXPG3Rf5cD3dz5n2OOwmWFJJx0PgQe1rCfROFNZSdJIqLA0uW/IpNDozAb2ynKaBX48WjbRpLUiWMD1E6h4a4mIvhFATDCUzbJbnOwZpxrnV2/1RbsV3LUZdtSGqlfdPDdGADZvcs2r/DECVW5x4xIcCM5XkmX/YMT2pey08nU4kgHSKeDRREeRWlsyKzEpnQfnybOlb61IwMGdylE7o30t7Rl2CIvfoLRIWeO6kFoUQCBz9vDLQB1Ddh1qmT3HtfhCuJNYx/Jyjbs5uiPrxjBmZs9F+KCHttC9/68JyTB9ytI4FzTxavOr4ReN31v6qu3Xoj/w684Z3wx5sqKk+GrFuxLh56ZJUoRH9UeVLY+e4wu+A12Fh3kfa6tjOnmjRo4V/NYw4X0XCdIrG/DSxUs4yfr3I9oxkE/i+4v7tCGKFIORvwpTR5oB8529hV5rqLgNQ7k3t2+CytSA/HhXRqOWHnqANbkfnyP/3QwZE56LNQr1lhDLO0BiQRQ7XrN+jrPMdoPeouL6GkQlaeRuthMtJe82PH9MEAnz0hnyWW6Rhlgk77/X8jA/5qv+M0YrTEefXSOIOKpvfGYobkhtlBkhr9agH9tvPHW8W1vGS2A0878lq9DArrktvB7CdaC8dJ9Bf+syrtJ6gc14lOKzbm3tEHa57qosEGWfmm+v82mwKQAzNssthY5NHNS4+pARmJbdE02ekP55UAmTXvxDGCAVqDlQ05zaHRGbXkRVLj/dAgoCoNQ2b5ABT8WdXXaJy6itDbZWwd2vSUuApfBtH2mQ+haWaQIuIdV8uzN8JrzGcfMorpY4EJX34gh4+pFHhFdtdSbjCuNW2cOfEkexrcLMCBtTGIvoB+4sIPGopIAL7lHJ8vSmazo79tvhdjBH694pABPmqR2FSkkp21979ot0JZMn014RYC03I4jAjiQ5B+L1q0arSWhDlS5oT+E32WY3ilH1lyjocOWot5PfoYp08pfLW/FYP+7sB4antNLCuaXp1Pt6zgQYY/OEnZAbURcx4xlq3FIZONLUJhPwb22D/pssDc010n4kJh1LV8sCK33CbNf+4Ve3aRO8Vn+wrjgtp4NoGOCGJA8GjyCL0G126bxHC8JFv5cjjpYR4EMSiTzd6wZV9E+xl0ZYLqhyH1pU1CGMoyTN7JZeKLBDl4XZ4LuGS9selFzCX40wMChYa7f6zpQEmQstW3KdpOF0WXB0mbCMue6dpLde8DbGYoD9CeNy+fWqRBnNJe1Rqa3WMp5L0Xi7MJ0N6blyUEviFyYu4EprMjOsBI0aul1QdBaQgF2ohD+HOk+juq5DZXhzVdBI81F2Kj0UBCkvX5PXqG2ZRj1l4IafyYeKY5Vz4IKOKHbgqAqCEwDXxNDFO99oIKkRJJPd7Ept12p0ARRuv+aiTcBnuilECkWcyXj//4l+x6JaEZKhx5vfDdj473u8GdcU1nelFOAFSZjdX9OkyZz2aU9XJOKZ0PD1jQm5ijs/mpCFqLXRcKAjrZB7rJ34My8rVAsJtC0qQupAmETWIbJTT0WHBv746yvpwpdN5o6RZTix/eSeAa6O7mWObpIf+KlAmSVqnDJc2AjLAltOAJJCaZ8AoFO6W54sxN7+r0ACtBU+d0Q4KGcgOzLJixx+F7aZsk9OSQ6ErKifPFWLqlk/LdEujD3kmNWJD6l6uV40x3bp8OfWc9gZvMulk9LAEdUMPH47zpAPcFhJgEH/whMQtxBeYT9E+TOLJRgkJyKDif+ZzowZ5acXnnG3MBx40GqOnr11OolBKR00QnLLIncU1BzXto8gCAF5DEsYsDiABg42IJWilpKw3UHNSlZCZ9gew1jlAe+WtR/r4tOHDOCriwMUhpKj/jbZNCTEeu2xv/4sK9jJq9DyTAAP7yoH/4YfEb5fUw/3/6q+WSAY+JLkN9a6vjpBExgRuK0myIfjldRPdqoBVIvS+wadqrirLRe2b8zoeFVkiTs4vWWJVSR+daSsPfr0Xb1sO0nRbebZITPnA7t3PCGvtDJq2FsmuZ0ViQUJ52N07q+spxjRF3zek39ahr9whZa1WpBlWNYjgNbuYY6qKfJgsGs0h2hyfzo2yimfNpLaR4SgpF/sk76XLOIAgbwoo4GIvYHaR13ovF2g0M8w7E8i9H8NgEpJr5Fd5XmSNhmUWdX6jdy/yl0OC4Q55EAFD+WvRevmJWh8+V3l2WzWxBAd5m7Ks7QbkF2ZKQT+QmKFv8jgP0fnIB/9JiBcDZD9JrBsR6jjCQBJWh2BYEAm6HGUbsIqpV6JLih/BTdet5bimI3WP0cO0pcanHnUXr8FZobnHni9MlaUAqiDxHjg854X10COIEVBApwa8GtsUKMxm2K3LAs+BDAa6OUAfKWn1CiWxIoAAeVrLnFKkALZe2zu2YiiB5wt1rHE/OQ8mjqWK9xxfpCAOlaSTXZzF5WYDKmoHAHLjlgSzG3pAtYlnwrNjUIprSVAHKsCCuOFhXNGEjRQY1U+kqZeWyp6v47D9KfujG5hhwEA8fhk7+GQyFQRweJCLXvpZVabZgIJ6ROBOzP9frasDdfqvPeYaYJ3Q7gJrKFi4wiZh5eYzKc0kyeB2/h9u8yjRXzjQkpXkA4bq+3fBHbw4i7fCWjd33grzi04W/D4pY2DDplwT1S2okXye8UZRDK29WxIzR7CZQ+Ca/laLhawwNuJru4YC4xmTrZVT1S55/w4UuCVEKZitqGZllP6E2E6vRlE8fSTdMovg6Vq+YlmkN+qd+W5gNJJ6HQAWg/q9iUjYxt6IvmCWqvYawfq9HFwbuw4RTKSA6+hhZhcrm9+jtJsteZUN34rl00KqcrVQRb9KGqGxaR0KXQdyBjGIz954sOon0kpaNT2lWU1qGdA6R53JKPe72kxiHbP2sARxxgMU/hHgVDdDCSi1kx+3QD3vR0kP7g535ozMWQgSrpMz+KBCfXxiA9uxwbT9wgFUy9Mkt7Cr12HnR50LYNfW6MugUe0YzueD/O3Ukg3dNzasxeGHccV9orH0jnsh7KEgBiMPeqSXy5dlXF5yBTt5ET5Q0v5NYfMk9t2pxYLROxleIBG0Q/JJhuIy7kIeE1pvbEYsB3nujggFj8rOI2RUiZ6abxrQ3dExqQ5hEconVnwqegg68SqwiuWwLcS7UteRqknTlz+0tnH0R2ZnMOVsbtZwX4UwCrd630ldgkMcIO6K+fMXpfIWNJve/3/zc4eZjaAvOIO0ayzcSvz0LcqgdbXIM8OgDqJWLD3nn4Y6vE1y/dJvWqzDMUZmtSgJgYky8CoMTo9mAl1Twfwb70X8ZYOlniBVN55QGZqJ0jFvhCs1i/jiMtgWca4nnUzvv1mPWrSo1rAqTcLN01POX4iCyiYLUJzzSvy53sWqj+zh/vYhyBEmuVjU5Cdergl5B7hEcXqn8ReQ4bvXDA0yGhB0iQbtLPdtlofheighc22aDi6i7Mn1IjytAPakVN/+FL9XoBqq0/KspEqgOxAHOx1CLrdmFGosF5v52ZPLsjtSrBK0kvtYyjT6ckdfozv/Cmi8KziIIns5J+cucZ5tOwKCktBe9eaEvGOvAfIrsdgcGWeYaawuDcpnJuYkh/FGpefrarD659BE0v4xeinaQTeNi0M4HelmOBSyJG5H7ZvARWUlpAEt0PFiKCPu1qPAic19KXQeaFenJHBbvAjXdUrm9mM4zQJBo3scNNZHdLyEVWZNAGZtQ4XgX2kSznTbj023rm1xXccO7clpoSY0HLnSF3X/mWEZTq/fB6Q3pxBb54Y0TAExb0SRyfEWjH0tJonzOVwN2DZx9ILOPiLC+fRXHdboA/28aOIfXmVTnPNMF4F+2n3VD5zkXGnOxQhljgGea7X01Ao58zaVVfrYK314FOfH3SXTw+23T9/MWBQSZlWbkL9A2P/+/ynK4eTL3LhWWa1pmtmCR3eHxq7uqgIevEVECfAl7yEuocRD9+Y3tHFbZNrMPfRTVXt5+2yGZX0W2wls6oU5/AathmCij7QN6t0+gVyNqxSCoFvCf7KfJ5FSXwhpLsM5gNYqwLNHfFmiMj70zUi3KQAPWYlupTNC41U8upHSopDnBhsx1FopxyuQDsgbnKo6W480SCjH5AMPwdGqnWEV01nG4ypSsFiny3+rMfl/s+AtaqyGgq2JKJLMbrIFapdIYkbpsOBC3R8VwVYBx1g28Zoe5QJ8d3gBBWWomV2NUSV1flhhlC6fE4csm0U03eC8Xfvu4VNJktzAqGnu4ex69m8s6VoazkA+o+XA2RF/cjjaKNZAI1cw2TycWbIaRfYP8zdHxzQ/OHxzcVap6JQSTQdzY5w2uMd3P8BkSKK6c2EcVUOY3nHVNQyq/d59iYR8brtvXiSWsKhHUboc4zasOS9JHPr3ht2FNKDyR8Qkp/MjR3KIHWAg4mnk+5VfKdJ6WWK+P9yAl+ImLiiTz9RenviLKx8weyOFPAMYElAhAmh4DWzTtCLva5nR0EVRSmH1KlO2CXzbtHl1JjvjXuMmMKoWSImZUQlOqxbFN15HyOLc63YZ2oqHiPdEFEs9WfChhksQF4voRgpm8KDPmAgncFMM0GmUIb3b6cFh5fS66DMlW+IynqX3yoiyh7LMEcUDQRZRft6ZcLgfjXWkqpZsam/MzGmExOFKrYnsBHHq9LA9p6MuwhaysHTqWYvmNtzhbkmWbOvobAob+6CWIMCV2A5xUTEcTRDOsm1pxUULBrTL/vTyuLESw9QWahzuVwS3lDtVx+pz3SPHd3JB/PZnUp51n1wQhCK7oQgWyKZI9LL692UiRQ8LMKfGTwzKmeY7kzu0L0kmGu+PB7n8k+fuoEVglrHhBJxD2mUCuBcgxv+6WLeAE7UDDcqlZkKIqyRpGD9LXi2zf9lxRAz8Qo/zVuwGh+VzvIi1l9svIUXcSNt0tmRK3Z5rZsBkufj2QhcBKk/DOi8GLQmMEKqq/Aii3+8tLvY5BE6f9rasSJp1HV7H34L/TPNYurKbJ/Yko/sMfIyeWxV/Q19+PbIawy70qLlvC4FGb/hr4KXicM5BVnr+YIobg7d7gICQOPKde77avK05GEJV8/bX+2ax00Ew0m06ODoPaYW5Jjd9DhqSJfaEJAPUjq2dmCALKj4+HaNrdfpHhlZCsQ0I6TkEs4SGHzjHWKcNq0GlshPnIpnl7qkCmZUCvgCSf6pJhYq0PYhKSq6ObOVrk2FB62R78KHQK3XyvXp2MIFGF9vHMfeY/lY3Lzj9NMRC101Yl9PongEFal7sUk8xgTh2oCtBLnoiyAKi0GY3xHILZ1tU1LgUf2m9G16uTF5kLaCRmV8Ul41lMByi26TPSRbXSlQf4eGEmb6FOtzlCNESNlJBB0rSvVeH5VhXdZDexUFKr8KiMeW5miHr+TxzQszzilrx5KcS7mHYvUZlPV0Bm9i52Ypudlfl7ngw4OnUL7oc25vwCojtf8urQvjXE5KX2FGT7yo9TCJve2yYzgukQH0mfX6wl5RGbtXosi8fnEOQDpBapNJYFGqxmUVf2wEr2Mzr5I/D2JfscM9OZsY/OaQjgXu0JQiLI+V7e8A4IwzI5AFr0PuK8vvwG8TSZ+YWALzJ9fBZIzCESAAzXJM+nU2zO8p+8msosScV9zBcoPNsWpV9EejeTCTSEqzmmOme0aei9CZFydLsdwo3tuEQv7FAi404AQUIxREWlCSz9Cgesp9fTrSCw86Go9KKbcK1CiXLBEjR7c0Ol978SgfRW8mC1ERgJNCs4izBf3bPtNUFNH4UFjJk+H4SyKH5zBoH0oAisNTqHQZjzN+7zYHtdmUh/cNEMMVqJJo2kwDkZ26PqC57pDFEcjDAquhBMuo77DLcZLgxG98+AYSxTtBj3ps+1PWyGXLNRRTHVHW3/hZI5yC2fcosfIiHiZwElvS0oeYuyyCjrNlxJR2qh3y09ni4omLaY0DJ7bno6ApNe/5FH/0C+jrgG+Z98WnjDDg+GwMs9su9/6Sla9btEHt2imjxOClAyFHQ0pA/v+m7bPBVyu2hmvvQRcclh9nRJeqnbVGyeODaUA6+UT/NagXUtUWpbmtDBmHMMcf5xxFAe6i6XMz9nwD3/nq0fTdXhMOsBJMyrLscaHJAqRTx1fvKZE70k9cvXjSmDwU1dPOwGLiVhh1nZPfxj79A2kgbPGMQvxNYwrOJI6FuIInr7BMLGuS77vPquDZ8Q4ArfgAEAy28+AzQgT9qpNuzEbLoroJRNyByZtT4tZ7oBvpq/uBaZmzm+MZexvIzB5OufTr1cjd/oxrwFTXgleLLoacy/prIoT2Hj0HrCZ920IJErNXmUutbxXbWsg7HpNWh4yoA4Js05KwW/O1oLIYq6KI72wJpbnjZHYKVuMozNY7XmPMs4aSbAK9DQ7THrGWahDN0dNi3ncgb68RfV5N2U1oHvu9Hg8Xm9CjeDrVBKZ5uPQ+MHzmEcIGbBKsmP784CoJwsuyXMARh6V39s4WrVf299onJ2J/HU648EiLAWkFVUXXsqOZYZzdlRjG4dP1zWgtFzakg7gBiNIoGN7J+VkvFAVFwcOkUHeukeDQZI40jgFva2tNeSp93Yu+JvIgT5qwBbkxRgMRHD7uEH6pGWrrRTFPdt1/F0v/mlyhTwDhpxMGfd4/ADSVlo5BzlbTAWhDjViGA2QMvr2hbqOoYuULnfj6VR1mNQJ2BeUqh9zT5HDx6iQ49fk+Hqoi1mBtZyAmmgNA3rmXjo5tByV4IbJP+K237taQ+ZrJkq6lf0/KE+iIXaPjlinnykM0vC+jmAdGXMa7pEFKFuJ2Z6duCAMVp/YnyxDxk4Hwrt+K9ea6JXW8EWUUJkI0xcKf/GuaXaS5WEL/qZqgBrd41Mps86IzX7D6Xmv2kjrIHwmikEbmujydvFDW+vPTFt3StKcir9T+6HYH8Oa9L/dthpG0Hota5bCRt9NYcvWxrjyFBnGJRnlMwQaC+5uO9lPKdbvh/bAN7nit8Z6ohjbdiQ6zO10uLKF7RaZFu6x9qIK6hf3Do6i4HZ5DAmVJYxhzAo3CpK8JRmcva3EHI4UJT4SiLx7Tqk0/KKqV6KFnXgb2CTBpnH8Qw/+jn3XLZNz7hSllKcJsHqN4NjDywGGjxIsRBs2I3aipYmjxZ1wYuug3KOOUhHJyCbf7DEPCL18WT9/WwV6ctgE/pAwPcQv1H1Cfj84M8YmHZ8bOF1CNTH9trBT8Pg7zCyRxcL4vihl9zS8Si0gl9MlVJjYd9C6kGCBmIvEBT/++5OjeZUC6PVlOBsfzAKJmbJYFEcDddCsnDY1/DsxTJKLGwrs1Ipx7LwvojfTqLUNGlwSH8ACt/ND3BVixQiTU0bVrNw9PzEQDgiGuW7wFHj3OG25zp6XAUd4k8IYDBzBY6eRPc0pgK8Do+Fu1qHlydarkngSwZScWdqCbfH0FtKEzplNzMsjirJ3IMDQW4miayeTmSd8+BRLmyg1VZPW1yDeTmTqxVkFn3dPhTc1NsUmG3Qtyn0Zbo6l9HYMkmdX8iPY36aXYoUkGWfNBHPTy0VG1S6y/QW9pjV/o3YJb/N0ovFcb9hZsKLc/S0jhTvI5g8y3FOC3GjwKMih6QN5USNbxSJ0FQZXkUIwRtnhQEvKnfjLh4xdhzfwz+T/tHYfWPFnG5zNvuSYsQMHcBLz47E0JIg7rpCKx8JOlz/unm0RV9S8sw2I9XkC31EPw3J2/9kTc1Qqft1jd0e00Naob9yMRwh2i2cKmTwxi3NQM1I3SrrB4/QH39n3LMzoBOrCQMuX4JHtRuJ7wHZt6JXpGIfC73LaLvKvHwi8MCjuaXIPd+LKSNWc4k9q4wH4DBZqFvSJV2VFxFDlJtjcaQ7qcieCk5gda7ygSm0J23aH5xQ2S4mqAVFeAz7dphZZYIVq235ow9SS/5eEjpwrpHrU1lNvFZ3/qOx7+EQeHLu3c2cg6Jrd852f+IeBrJK36Lh4SrkUZhZArNFGcehA1+HhxiuXNUHn7WAPJ0DKZ6/GvCiDJCqyR5uKVCONuEAOcraaMxwMvzI+kUye8Xrv8Nwpop4/SiT/jMywr1W6FF8p3WOY6RPe29NRcNWavaSAEOaizgR0qO9FWv12ClrHlLa7EO0doxP+oiTZPHAHhmcasfIoqcNz8ANDMjaJJiKeQEtSfRMaV0zAY1xQ/e3Rw4dTJkXTGjCI/A3At4F+8negem+xAybLN9mIEIsXJW1Uv/TDanMWuafRWgc5ZA4AVY+mg5Y2UitXeDXdMBbq1SSzq63R4kEV1nK4clUS8m9eyTd4dT8Q+3WJFVH8VO5semdEoOu99drPU5JqSDNmY6hZZcHbpeWRjPxyEXJqkakMdbbYRcc3vUKR/fWn5Z7z6Punsnt0z3W1Iep3OPSh9ikcmnZMndf1uAATmtV8fVF1WKe5UQmDjOpuURdKmSy4Ig1RrviRllr/TNfkOYBiIjkT1iImCZyTwyLVOZDKSuLzpuc8zy7Y240ASX98qBc1kjH4jkx4Mn6draTtCSScMPIgvnQNP7uZYo7N0vRJOOF3SziJgyK7UmI4/Wglu0sj25zgLD3gnxEKXglV4EsEBmxVgUe0qIqlT4ZOd9ifHLR5VDor0EBX5Kd0MDCEmqdISaXNL5f5ENog4gXLWxWctkibfGKxcRn+xJZPoEyuH7SwWIDNKnV63hFuOFv2di6lAsFb0a8Z6C9Mfgc6ErrX/PUz06hkrREmFmfo3KQlqyPC7R9VZIPnJH/5+zn12q8v/kc7QR682ebBVvYVVFknKdoZz+EerYggEVQHXL9dOBW5ncEdj3+RG28jn4Y2P1J3/5X1JcVDbcK23XUpWx9MCxRZJdU6An0vqW3zTDPNvLCvltclXb0mbH7TF7yYkrzPUHioHVzT1XSKRV64uy5ibKJy61LYbX1tn00n3J/pfq/z0zQNpzHnRRnuqTwIFBeEq64786c1Iw9fGw6NALQCFTZbK05/R+7GPYMeloXyC9C1jQmHC9uDYEmg72bjuIOkyvsMGxNNn5q0n4/65m0XW/h/YYlQgL4ssleBNTld5x3OxvRJRRBnMtKZC/Uay+u5uU8AauY579c1SZkuv+dpK66lhj5/zs+YzHcE2MIljXdsnyRoOslQB8vDuDE9fStJ/D/nrFkupYZFWytoMop3TdfcyZ/KDD+9Y8jvC47279KFBtARxlEwSDELkoA9wWvLcFEqH5m/XDlVmH1RsUHlK/T1ZkLKUoLoWLHoKkaO+w0/uy8dWpTx5AtDk6TWdN1i2PWCQ6S589JjsyPwut2YdbSywh66sfk5g3QPrI3hELCICxWpqqtX9q9f1oj4XkuNI6Ci3VK1CZGCpCpzdaFtJ7OeVm12/WRsgieVa4invkBbQiusAUAhzM8iZv1pU58Aw05W4mwBQalIVm8S5zBYIhChA7kjitgtw5L1s4fO2RVaS/RG7H/ngFrgPe0Srju/51QAsiB8Vb58P4PjbLOGA2ZYSLOtT3KNEyEj/UP6diPptOfhRYAcdi4T2Neg9HmMCOIh21nffiCQ+w7M0x8CCl27uUSFCRnbUg3LlwaRk0zFxFvNe/rmuI/3V/9A/4lssYhUz2ghypTQTX8SWlGnZVLiKzhWw5CLARK6Jmg67KbzxuXhS492v2Ecs0Lr85gAkqggwNAZu+VqqvcnAFVaGhgfXL1Ygn9fLOjg/qnO8aGC7Qe0mR8WrpdTzApgW3OeVIXc264t26V04edDw+8JLhkPn74D1SB1FqDOttvyyH9ITIYO0cpzfSYlytU8hnDrylxfKorvI90dZMWBKZERcOmw/MDH8J6Zd4nfP3n0Ag6tIM+/GKYxi/2pWiBzbUiFzxp5FG9yUz3YQ3f5lCt46VYOMQASkk7Ne/yuRl3ZR2bf/anGyfVCGP0TgA80OOoDDIhJ6ZhuqmQADcI11PHF2sEQgH2nhkyxx40Y1tSqe/+RK+LYL3Tb+TUY3Jc0fCJYzTIOYx7MphSkFBs4YKvMf/LAloDjQluMo9WcMVh+zaWLdjiEZFHBxjSUAa0jWg7H7RBwV0D0sDRzZDQlIrBERBULpJVKOZC1dzEMfc1Sfi/OrMWCEF1wZkZLqwiNcy5ydV/hvJ3ei5/wDJEAR5ZihTLhhRqhM6hcllZwPCihVmCWtrnMOeBcN7GJbTDm9X6ksTHwmd/INXpUNNFDYDJ4a6Q3jSUINXcKsWwrUPKD/wJX8Mk8lw186VrsM5AF5/JfuEmrDr+2PgrZN91YEctDmFg0eYs1PCPjc0r8hfardF9KJ2cj4LMurwvF9WcK/oiw94V6zqpcs72L6QBQzKXNF3z8JNphDPuBrQCDK5p5IsmzU1EW5HVxRt3jg9NUf9CAYKz/KLYARS/gMQrpXTBIm650MGgQCyPwDzHiGkV+sA41NjtTlDjTTEfs9ND0WGpFVIOL4FpsJeurluyAwcZfjP+gP7CkAY/Sk1n2/H6byiSF5YUWomRbaNEee1q41lW4dPq1Q1WDMAbHujAwnTTQbxnZwwVisVL4UBIFyCDxL/oLNDtrawnh3LWby9HwwAdHJicbIdsEA6vUNtRdQueTxvwLm5xIZqip3VmV0jZ9Zsam+n8X5yYPVsLvgVtqrvzCayFcBZXQ1PnzRUs+lJ+qXwjR0wuJwojEejqwZhC10BpMqgbowAESQUK4kefVMf5Rw1yELeUnGAFpZ+wvVAI0B8QcUEt3OiJ622KwTEVKMFTzSTLQM4ko3a3jS1jQgGuD0TOS7AAUkeJYXnBxg9LkFc6shVvUyHr4bCAIjVbaDJANFy36TeAfqHSsbDectDPEY5eSbH1Fv8f5SVJNLGQ9nVVK7g9YilSOYVhw9H2cBgd+qW3+EedUwyZeqB7vTPxkXrkNnt/zH9j3TNzrQWGtG5hi2RVQh8qvC17aeISqsq9u4QToEs5dYwqVCAaNKIDs0iG2H1MzGivHGjBWtBT3+QOwkwA7Eaum/Q2QOOi4nQ46scej6haRpxV/i3bkYl7St7sKypGuV4XDf860LECr/R8QBWZIYamQCzeDpOc0X8sz2u7sWf/Zsy9E+0vcXRh4aKy+J8YfYnWHKn84AXPJqI/FMOkaJj7I7PTyK8TUkVlJLyK7kdCB3IeaFCQTD8Zv0OJ3d370OdIGHzg+Rg3+EPnlK+cfD/1AwYhXShCZ8GFL0WEnzni891rVoP0abufzX6VAEEr4GsXCwfC2YlrLQwvHdBiX7Nh7RFiEynAIooQMds/zgKkrT9s0Tbr0tCP8DB/CIDfcOcg5MeVmLGX005UhDHv1aI1/DIMLOlWRj8HLyI5PWttMoKOEoEUetUcQ8fDsvJac2ZAvfvAULELn88VsYRlD6lb+1Nive2JBVgFk2aOXUzxNR3oIy0TqMkEsvpwgu7a8s0YCzyD+m5MPKpMvKu/rNAah1VNLWiCoevXDxjaXuJqZ37JHK1Z5ZSsgDOVLAsxp92sV7c+iaA41q1ZDCzF3YovIRYKgL9XbVX5y+AAADPJnModK/jxxw43CoDhLT3vzDeQZv8uz5GIVbP9DTvFgzjtSKgheKWHRi92fXuFrmMGBnB/88KthQinP9AADbeqNOEOR1vaAYC2Pp2fcAAGOFxU0TtfEkpxiU38alVsN+KC+DPcs0E4RF4QamrjHUdNQK2YeYK4yO7XYyuBMmq0RwaUq4YMyTyP8UP8MvWOWrp1lALRjIPgYuyb13WwotJ3cTADAk0jFPrRHCwGUPHQc4XCXXPDxxEk/HkBbBC/ZV6dAGfRcRIAwc8JqMXLABjN4RBKtOBniAki+wT/BpoILEFC/ekI/qs0/YHgNDKTmtaehWwzEa//0dLphFTRY+55zwbCK1DBD98QEVPLXuAsUsZRe1R0Ao/5zxAHk9lOmemhHZyu2iS8drU1keGdRFNPd/xVOaWFl5au8kRMWkgJLus/kVUQBDY4psRlQslrmYRSjomgABRo9hdaWEAhlRquY4ZRcDNbQS+8ugB3pp4oXIATp5sDJUPAC3lgUQ2qHufL7AFo7BZ6Mv2xRf0sAxvAMNsKAiQYNU07r8g9W8ITyEK1srwg98xAPgvUBNiTlRkQW+X5nii4IIaw+NksrgzICtEjYS4S3nXoCYqPgIXVv/gxKq3IPHGPeAABECJPJA53v3BBj0GLAD92JyaBF5hfqrjW9ZQA8QMFJt7ANGHCjPiMlQT9U0xS/4dp0mZB4jNIQCUgZsueYIuHchpbD1kBuGZFCdQNMADaKU9+CmKOBqhO9bQfwqXU4LQGmCFhu6EaDLAAOLXk4jhoI8aqAzZ9QT/NcQVp0U9yBd8Vk1PCqmABf6BNVO9yWIQJVHD8n56eUI7yauAZe2tA5GrKEu+wVniRMHyLW+SQdeKyWIreAJ+BwztCP45WCyP3I/ATo12L4wYdWqgzIDLjrMjyr9rNz5xVFOVSjeA/yMwB7+OhNPcgJGiYEPRLbr/e6BOWijzsgixFflYXwVwkBe9lwLSCXl7t5LGsnwFtIAAOA+hoT4hO4b85j5kzT8GdQ1lb+w6Rn48cjXkGs1hn4qAGSCtnFcB9708AwG1mzABuVfNhUZHYW5tFmwKwTdPwmgka6B1RBkP2eBoOz3puMEsXEE5qGcgkA5Z1xOPNAJLDIkqBnwGqGIs9XnsAH87BRqwBLffc/bHgjzjQp2CTrc4MlEfQ9OVDUi9SOQEsAnBa3zJK3Z5P0K46ZJqTDCaJnBSpwAAT+8EA+NQQVKUWtyLF6C1cUlvUe8mvtr5TsBo8ILjMFCjZtQ/3dI8fKgesmd/y/k7D4/VDHtNZqrdF0WSye9n58C4lQDqRPsASXWxyNkUIhxupiq2DerVsYliC6/8NR9ihc+PkUEs7HUmUeQOIq5ouxOVhqZ9jquVisiBI1OzC3H/oUMTyx6NVe32vEPebAS8NIG6Z0JRxBLIoa04ArUAAAD/RiUMfM/4l5l8Qy1OkMFxSOFfvCj9TaI6UmxshiU5NWxdx/+/zKI7KX57dH7+cbRIpYOWUn5SxD1M6hlq1xxd9hQpluPjo4XljOpgCBRISin9l8NyFSABNIEsXxOyB5b3IAGVfpfhpKakTLxjqRHGKBEIC3RBpbZ5Vlj3Agly4/sGSWeLPQyAjbHsrqhL1dT9AnyfAOVD0k2XbewtW5ZXiIm4Sqf8V5KuK0bRcjRnnnFBi2wKi2KXbt4RL0vmGvTlWWPEAaBbXxETY9vU4AuU0SeNVz+9hJXATuUaAY3tKkL0p4F4JaYE1/uFltrOln1nTAASvMlLrhLQfQ/phBhqERpftwLCUpP9RzTlFh/S1SAy/qhiZGooBpdaUUj9h7tqWJ8A85U+bvZIaLfq+hLbYXEHEWjho6eJYsnVZu4riZHZZbZegX5dA83jsfJsUQbIM2W8Bd51hFm4zHwQIC3DuQ7aF4JzF1WTuQZGIY75H2AWjr+SglOlSAbGfaemSVxMUBHvrkglLsYa1pNntLnqOY6+4SnOeZiv/eDC1XEAACg+kAF7Xoq5TSLrxix2qrYhoeMw9OzutvRT3wL2p8KEJJ2CDvewQVF9iOl+VQ5hhocEEyG9/6XyrRWuxa0p3i13BUDQeKjZ1GE2qACHRXV/bhzUP2rCdy0t7KkxPF3uxbMEIGeD5IBiUdi5GWOGCby8srmuQsXzV4BYaOfXx7mJigN8qHi6dFIoTeOhRLfYUSOi3rFD8xEEHwOI/+hi8K1AC5daK6AAHhlYnYXcnjOuzS+OR39ewAc9zzE+C8jaCtRb3VoKr2Us8aeIPgWW9ty/VsqCvH46/J20NHr16Y4N1vEG556UTLpx4PXYsUiN/kzqkWByxjM+aJSJ1RIkzlgVfzhnt8p7knDPWvF7dABr3NouSd4r1iSMWcAfYzJ3vN2jQ5tNl0d4y91Eeb+PcdJCSsVgXG12AVhtoz1MDn3Midhsl0ZIY8ehvFr6ZyfBhft8B6BtFcTK+byCLhV8wg8AWr/PN19a1iahUpKA0PKhyV/Qdd/3qcA3g+A4Br6G9kjd0Z6gktsWvnt/aviK8VUh+WHXg5u++sMzkVehJY51xcFG1ukYjk1LaWm3VUefOE2o5oEeyyrzc4ZAP4GzaH4JEhjehcHb+pkRR2Nm78HURmCuFxybdc8QclwH4hnRrLcdk0KGlNc45wHGlwQk7bQATAbXSPD16A1jRrexijC99rmTEics4e8IMeCk1CEaFO06tflC+gyvLFhG+th0Mq+3PDetz3TidirA6EVfxmj0S3fqBSaAwJFSAKzXP/kL2wTtsIUlIHuztTqUJQQX9ieok2rX6v61upjcwDEQF/OLBkxRSbHvfT/Qz8zNMg40n5JuZ6BueLj82aLtsPcRmBex43sp1HUwmw8LPMQmpmSHhdABLoYtKNaOEA2Y1eXu+tAWPnDdinzj2wZZUyb2hojtuHZtbJ8IEBOElUszQrzyK3bqMINmMT8thTmD0krvDIaUieeMWB+72Dp/cRgz4arcGDoScH1Nuvn7/hipCZIz7lXzygP4cFd3ZKGDXOmASSNahOUfG9V4vYW+e2oePK0eJ8mqBIsKgPCgWsRrmH1KNHdF04EM8CK2AB1raJubz0QyrHFNSl7zuvQbqmRgj8dgjQa8ONFZ0b6YqTH8eSrpeLKnlW4vWsWi+ohS3bS6eiGOqACKfblPk67fWpI6Fh9ahgp3fRomOk7sqzBboInVOUhiQGRMl+znAU/2bJ0UJioLuy9W3/P8+kuXMw9UEUwxAApW+luUvi9RTlDZajrzj3wk0hZ2oCwe9TWaL/HZxIS+9HoxUJOBCVlqTIqnw6HzsQl1uqakMZBZNDaF5lk4Qv0OyowUuhJGwuQ7kAk79IZBG7HAVHiJbosTENoZ1cr1dEPILfXzO8M7EmSAIHxwriw60c4Nd/QHRcq/U1DZGQRU/6kab8vzFmHY5W9Xm4faTr390GKphplF0IaC0+PVzPLEOujvz0hyQbNRby0ta8LX76OI9pA+AIESZqKCunzvvyF3OTMhUd04P+VsU7e+++If/wktr7GhqRC9cxYwAm2oIoUYvyiexDr661uXu808D58gNIF/kYLj3jYrDS31qxSXMPMH5HYn0Dmdlaq2E+1eXCS1dKEz4R4dPM2dIJuXW+05K3rpAfRrsdrYkWCsomWltQ35fv24sCYPhktZcEq2y/U0OEEnDOnQlZI0MykWq3jE55kG+SyQqhnjv/oEywqe+/rsx4KzwS4uE7tvzuRw7yOXr+v+QidzlCfk4HL8JYI4QUr43UDJqTrMbYjGaOWdqyZh4T3A3KQwQRq8+IXw2dHkFv0DmSxpLsz0b2TPLG9wZcPZAmEMxzCPtsAyzBtnWL3PiiFfEAo+bfJxzZBEoC9XUFTiKpBZ+AgoI+iC6iCVUlwhJCl9SSsS9LTsGTXwmlGvkrlaHf/nEnsgrC1/w4C5ayBbvr58VEyt0e+X5lPUn2hLXLgzb4SgQy1AFqg0vvN+6RFYVYr+WWc2zl3sSnSKkHtjBIRi047QgEmwRXHfejEB5CArjz6VAGrHfCSf9EIMr1W7ugIxWTKrIVHDxaTrEUCRQ8wswaPyNbqPD9Cm4mi8lV5ayoyDqL4mhCh7tE+mXrKPQWg9UvjfkkXPxyxumi7FvFGvr6iTwdfkKwLM28nH8bFmJizVCxIApKMsED9WxkWdexqSTyajLy3ctF/FQU15fwzQHoL3mXYEWnAuo2NkyfF3kRTr3Pxa2JgqnvPQgAGWDCwO8UhVXl5oS+JatyPp/Ydby/iSY9GpUhOmzoX+Eb/taxlDzD6PcuixPMkwZXJetcfr3M+1BdPERa2xlzk/qVg438urKN0P8FCqkmR0gyU46a/EEJ+SsaHhV6s8FbDtdOR7rIbbLH5MKxMMSt/vXh4MwEE9Apy4IuvH3V6pJ/51sKMM9nmv7ADGHOLmbzd7/elVpWEC7hDflgX8ldIcYQFGJS6koYvumkltA55suZpCv45nzPTw5PinN8fImlsoKm4nrolp2YBoenJ0OceaFodO1z5gn9vXk09JcGVqySc2dUe2YDkfiu5Szf6c20XAiDBEWJ41T5vs5SEv7y4uT4VLOlVLigPWQpxz8iN7ULifn61cTS1qjUgUYkMQFiQfyKkfv9ePIAHqxYo1Ti+MTWiMc8+cR6WhDLw8s2A8u65V5jZaN6jo5EB76dwjZS9jXuR/+CbE1f7mNZxX3d/k3K5fdUM9VgyO5VXU24//dMxukPVWfs57rbEFtnPr1/PhLO22/DqKihKCricqLPKoL53FGf6A2YQ0ksScpE+32Fwn6cxLkxLWtuRMwqJODlNXGwqoG+1C8YzaT3qYkgYkSYgKk5HwBynrDQw/McYhL4F0ZyhPnYIciHabwp7Ia9PzXpEiEmHp+xyDEId25kMKOtACJjww5WPfXkHGrYCBOkljwMV2iTXrLU36wKdL0CzF8jgENFshxQXu9CSwvKP3K/4ZuY54EZcWk0ZGtiCUW8ui+m68u+pw1Yu5EAVBYplB+WC+agk24yzfBQgLO/RufC9OoqwdR+0radYmjoqF1DFtGz+eACrR3qGk5/zvrOXujFngFAMqnazM8RCLgUsf86W3W7tFHow6KPR9PN/1ikPMkNrq8PIEiSjgxTgUkO6mXlVmOHmbW/9BUKWgYhPs5SFPieJ5V/vzRlsZ1YMphU4crAWsLYafN9T7GP9GVCUoY9wpGDCrZpUPdg6pQHaH4ulUsend2FLp2iQ6zlW3ax8iKtWH5iVMe4Cw/28zqVo1T7OSi9C05ByCzUfCvr6fohBphhz/erK7OziDFPtDqUn4SFTlrVoy/J2sqyIbYSCYLKe6vXQ+uTych5NLqTtu5tprjP9gB0QfwSsM0lNxlAfWuOJgMmYb1TjtLY3yoe7T89NO9z/7Z0cMLHqQ5Yu3V1WQsXEYDMjUYwGPeEL9q+w09mIYdS/jByK917qRtzP9MY9u/Kd4tFGSf5SYv2Zo9ki7igUthvuY5jMu5+gdYoi1zKf7yuhJYWpYnbomwF2M6nN33FUeSSfDKZx90N1klIr8IATE4vu8+27T5ah5j/9+01XIOc1IgCvoNhbQ58QurvTInCJk3LzkMCsXawD320icFUcAAAA==')"></div>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="hero-copy">
+          <div class="eyebrow">Arc Institute · Gladstone Institutes · UCSF</div>
+          <h1>We study oxygen<br>and vitamin <em>metabolism.</em></h1>
+          
+        </div>
+      </div>
+      <span class="edge" aria-hidden="true"></span></section>
+<main id="main">
+  <section class="block">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Research</h2>
+        <a href="research.html">All research</a>
+      </div>
+      <div class="feature-grid" id="research-teaser">
+        <a class="feature" href="research.html" data-theme="Oxygen">
+          <div class="yr">OXYGEN</div>
+          <div class="t">Why is too little or too much oxygen toxic?</div>
+          <div class="j">Read more →</div>
+        </a>
+        <a class="feature" href="research.html" data-theme="Oxygen">
+          <div class="yr">OXYGEN</div>
+          <div class="t">How does the body sense and adapt to varying oxygen levels?</div>
+          <div class="j">Read more →</div>
+        </a>
+        <a class="feature" href="research.html" data-theme="Oxygen">
+          <div class="yr">OXYGEN</div>
+          <div class="t">Which diseases can be treated by turning the oxygen dial?</div>
+          <div class="j">Read more →</div>
+        </a>
+        <a class="feature" href="research.html" data-theme="Vitamins">
+          <div class="yr">VITAMINS</div>
+          <div class="t">Why is too little or too much of a vitamin toxic?</div>
+          <div class="j">Read more →</div>
+        </a>
+        <a class="feature" href="research.html" data-theme="Vitamins">
+          <div class="yr">VITAMINS</div>
+          <div class="t">How does the body sense and adapt to varying vitamin levels?</div>
+          <div class="j">Read more →</div>
+        </a>
+        <a class="feature" href="research.html" data-theme="Vitamins">
+          <div class="yr">VITAMINS</div>
+          <div class="t">Which diseases can be treated by turning the vitamin dial?</div>
+          <div class="j">Read more →</div>
+        </a></div>
+    </div>
+  </section>
+  <section class="block soft">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Selected publications</h2>
+        <a href="publications.html">All publications</a>
+      </div>
+      <div class="feature-grid" id="featured-pubs">
+        <a class="feature" href="https://www.nature.com/articles/s42255-026-01566-0" target="_blank" rel="noopener">
+          <div class="yr">2026</div>
+          <div class="t">Hypoxia rescues complex 1-associated disease caused by proteostatic defects</div>
+          <div class="j"><em>Nature Metabolism</em> · 8, 1791–1804</div>
+        </a>
+        <a class="feature" href="https://www.sciencedirect.com/science/article/pii/S0092867426001091" target="_blank" rel="noopener">
+          <div class="yr">2026</div>
+          <div class="t">Vitamin B2 and B3 nutrigenomics reveals a therapy for NAXD disease</div>
+          <div class="j"><em>Cell</em> · 189, 2648–2662</div>
+        </a>
+        <a class="feature" href="https://www.cell.com/cell-metabolism/fulltext/S1550-4131(26)00018-5" target="_blank" rel="noopener">
+          <div class="yr">2026</div>
+          <div class="t">Red blood cells serve as a primary glucose sink to improve glucose tolerance at altitude</div>
+          <div class="j"><em>Cell Metabolism</em> · 38, 529–545</div>
+        </a>
+        <a class="feature" href="https://www.cell.com/cell/fulltext/S0092-8674(25)00098-4" target="_blank" rel="noopener">
+          <div class="yr">2025</div>
+          <div class="t">HypoxyStat, a small-molecule form of hypoxia therapy that increases oxygen-hemoglobin affinity</div>
+          <div class="j"><em>Cell</em> · 188, 1580–1588</div>
+        </a>
+        <a class="feature" href="https://www.cell.com/molecular-cell/fulltext/S1097-2765(23)00116-8" target="_blank" rel="noopener">
+          <div class="yr">2023</div>
+          <div class="t">Oxygen toxicity causes cyclic damage by destabilizing specific Fe-S cluster-containing protein complexes</div>
+          <div class="j"><em>Molecular Cell</em> · 83, 942–960</div>
+        </a>
+        <a class="feature" href="https://www.cell.com/cell-metabolism/fulltext/S1550-4131(23)00043-8" target="_blank" rel="noopener">
+          <div class="yr">2023</div>
+          <div class="t">Organ-specific fuel rewiring in acute and chronic hypoxia redistributes glucose and fatty acid metabolism</div>
+          <div class="j"><em>Cell Metabolism</em> · 35, 504–516</div>
+        </a></div>
+    </div>
+  </section>
+</main></div>
+<noscript>
+<!-- Full text of the other pages, for search engines and anyone without JavaScript.
+     Generated from the same data the site renders. -->
+<section data-static-view="research">
+<main id="main">
+  <div class="page-head" data-theme="All">
+    <div class="wrap">
+      <div class="kicker">Research</div>
+      <h1 id="research-headline">How is our metabolism shaped by our environment?</h1>
+      <p id="research-blurb">We ask how the <strong style="color:var(--deep)">oxygen</strong> that we breathe and the <strong style="color:var(--vit)">vitamins</strong> in our diet affect our redox biology.</p>
+      <div class="themes" id="theme-tabs"><button class="chip" aria-pressed="true" data-theme="All">All</button><button class="chip" aria-pressed="false" data-theme="Oxygen">Oxygen</button><button class="chip" aria-pressed="false" data-theme="Vitamins">Vitamins</button></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div id="research-list">
+        <article class="research-item" data-theme="Oxygen">
+          <div class="fig" aria-hidden="true"><span class="fig-num">01</span></div>
+          <div>
+            <div class="num">Oxygen</div>
+            <h3>Why is too little or too much oxygen toxic?</h3>
+            <p>Oxygen deprivation (hypoxia) and excess (hyperoxia) are both toxic to humans. Oxygen deprivation contributes to 3 of the 5 leading causes of mortality in developed nations — heart attack, stroke, and respiratory failure. On the other hand, hyperoxia is toxic to nearly all organisms and contributes to the pathology of ischemia-reperfusion injury, mitochondrial disease and hyperoxic lung injury. However, the molecular mechanisms underlying hypoxia and hyperoxia toxicity remain unknown. By deciphering these mechanisms, we strive to nominate novel therapeutic candidates. Our work highlights such mechanisms of hyperoxia toxicity and the cycle of damage caused by destabilization of specific iron-containing protein complexes (<a href="https://www.cell.com/molecular-cell/fulltext/S1097-2765(23)00116-8">Baik*, Haribowo*, Chen* et al., 2023, Molecular Cell</a>), and by tracking how individual proteins turn over at different oxygen tensions to identify MYBBP1A as a mediator of the hyperoxia response (<a href="https://www.science.org/doi/10.1126/sciadv.adj4884">Chen et al., 2023, Science Advances</a>). More recently, we identified THAP12 as a disease gene that transcriptionally regulates mitochondrial Complex I, tying oxidative phosphorylation directly to oxygen toxicity (<a href="https://www.biorxiv.org/content/10.64898/2026.07.16.738975v1">Desousa, Abe, Kampmann, Jain, 2026, bioRxiv</a>). Stepping back, we have also asked how the machinery cells use to accept electrons has diversified across eukaryotes, reframing oxygen toxicity as one instance of a broader evolutionary problem (<a href="https://www.cell.com/trends/biochemical-sciences/fulltext/S0968-0004(26)00217-3">Midha &amp; Jain, 2026, Trends in Biochemical Sciences</a>).</p>
+          </div>
+        </article>
+        <article class="research-item" data-theme="Oxygen">
+          <div class="fig" aria-hidden="true"><span class="fig-num">02</span></div>
+          <div>
+            <div class="num">Oxygen</div>
+            <h3>How does the body sense and adapt to varying oxygen levels?</h3>
+            <p>Mammals are capable of sensing and adapting to moderate variations in oxygen tensions. For example, over 1 million individuals reside permanently at altitudes above 4500m (where there is half the amount of oxygen as sea level). The most well-known hypoxia adaptive pathway centers around the HIF transcription factors. This work led to countless clinical advances and the 2019 Nobel Prize. We set out to more comprehensively understand — how do organisms sense and adapt to both hypoxia and hyperoxia (<a href="https://www.cell.com/cell/fulltext/S0092-8674(20)30321-4">Jain*, Calvo* et al., 2020, Cell</a>)? Beyond HIF, can we identify additional metabolic rewiring that enables survival in such conditions? Along these lines, we demonstrated that fuel sources are differentially redistributed across organs in acute and chronic hypoxia (<a href="https://www.cell.com/cell-metabolism/fulltext/S1550-4131(23)00043-8">Midha*, Zhou* et al., 2023, Cell Metabolism</a>), and more recently found that red blood cells themselves act as a glucose sink at altitude, helping explain why populations living at high elevation have a lower incidence of diabetes (<a href="https://www.cell.com/cell-metabolism/fulltext/S1550-4131(26)00018-5">Martí-Mateos et al., 2026, Cell Metabolism</a>).</p>
+          </div>
+        </article>
+        <article class="research-item" data-theme="Oxygen">
+          <div class="fig" aria-hidden="true"><span class="fig-num">03</span></div>
+          <div>
+            <div class="num">Oxygen</div>
+            <h3>Which diseases can be treated by turning the oxygen dial?</h3>
+            <p>We demonstrated that chronically lowering inhaled oxygen tensions can extend the life of a mitochondrial disease mouse model by five-fold (<a href="https://www.science.org/doi/10.1126/science.aad9642">Jain et al., 2016, Science</a>; <a href="https://www.cell.com/cell-metabolism/fulltext/S1550-4131(19)30379-1">Jain et al., 2019, Cell Metabolism</a>). Moreover, starting late-stage disease treatment can not only prevent, but even reverse the disease (<a href="https://www.pnas.org/doi/10.1073/pnas.1621511114">Ferrari*, Jain* et al., 2017, PNAS</a>): MRI-detectable lesions are completely cured within weeks of breathing chronic hypoxia. This work led to a Phase 1 clinical trial for healthy human hypoxia exposure, and, more recently, to HypoxyStat, a small molecule that increases oxygen-hemoglobin affinity and captures the benefits of hypoxia therapy without the hypoxia (<a href="https://www.cell.com/cell/fulltext/S0092-8674(25)00098-4">Blume et al., 2025, Cell</a>). We have since extended the oxygen dial to a broader set of diseases: hypoxia rescues Complex I-associated mitochondrial disease caused by proteostatic defects (<a href="https://www.nature.com/articles/s42255-026-01566-0">Garg et al., 2026, Nature Metabolism</a>), systemic hypoxia suppresses the growth of solid tumors (<a href="https://www.biorxiv.org/content/10.64898/2026.02.09.704975v1">Midha et al., 2026, bioRxiv</a>), and a genome-wide CRISPRi screen identified loss of basigin as protective in cardiac hypoxia, nominating a new therapeutic target for ischemic heart disease (<a href="https://www.biorxiv.org/content/10.64898/2026.01.26.701810v1">Flanigan et al., 2026, bioRxiv</a>). We believe that this paradoxical finding — that less oxygen can sometimes be more — is just the tip of the iceberg, and we continue to look for additional inborn errors of metabolism and common metabolic disorders, including aging and age-associated damage, that might respond to turning the oxygen dial.</p>
+          </div>
+        </article>
+        <article class="research-item" data-theme="Vitamins">
+          <div class="fig" aria-hidden="true"><span class="fig-num">04</span></div>
+          <div>
+            <div class="num">Vitamins</div>
+            <h3>Why is too little or too much of a vitamin toxic?</h3>
+            <p>Vitamins are among the oldest and most widely used interventions in medicine, and yet both deficiency and excess remain genuine dangers — too little causes diseases from scurvy to pellagra to beriberi, while too much can be equally toxic, as with vitamin A or vitamin D overdose. The molecular details of why imbalance in either direction is toxic remain surprisingly unresolved for most vitamins. We use nutrigenomic screens, chemical biology, and mass spectrometry to map vitamin-protein interactions and to identify the regulatory machinery that breaks down when vitamin levels swing too far in either direction. Our recent work on vitamin B2 and B3 nutrigenomics traced one such imbalance to NAXD disease, a fatal childhood disorder of NAD metabolism (<a href="https://www.sciencedirect.com/science/article/pii/S0092867426001091">Garg et al., 2026, Cell</a>).</p>
+          </div>
+        </article>
+        <article class="research-item" data-theme="Vitamins">
+          <div class="fig" aria-hidden="true"><span class="fig-num">05</span></div>
+          <div>
+            <div class="num">Vitamins</div>
+            <h3>How does the body sense and adapt to varying vitamin levels?</h3>
+            <p>Some vitamins have well-defined sensors: vitamin A is detected by the nuclear receptors RAR and RXR, and vitamin D by the vitamin D receptor (VDR), each triggering a transcriptional program much like HIF does for oxygen. But for most other vitamins, the sensors that let cells detect and respond to changing abundance remain undefined. We want to understand how the body senses and adapts to varying levels of these vitamins, and whether analogous receptors or pathways exist. Along the way, we are also asking whether the canonical list of vitamins — largely assembled in the first half of the twentieth century — is even complete, and searching for previously uncharacterized micronutrients and the sensing machinery that handles them.</p>
+          </div>
+        </article>
+        <article class="research-item" data-theme="Vitamins">
+          <div class="fig" aria-hidden="true"><span class="fig-num">06</span></div>
+          <div>
+            <div class="num">Vitamins</div>
+            <h3>Which diseases can be treated by turning the vitamin dial?</h3>
+            <p>We recently found that combining vitamin B2 and B3 supplementation restores NAD+ metabolism in NAXD disease, a fatal childhood disorder that previously had no treatment — turning a nutrigenomic screen into a therapy (<a href="https://www.sciencedirect.com/science/article/pii/S0092867426001091">Garg et al., 2026, Cell</a>). As with oxygen, we believe this is just the first of many diseases that can be treated by correcting the body's vitamin dial, and we are extending this same nutrigenomic approach to other inborn errors of metabolism and micronutrient-responsive diseases.</p>
+          </div>
+        </article></div>
+  </div>
+</main>
+</section>
+<section data-static-view="team">
+<main id="main">
+  <div class="page-head" style="border-bottom:none">
+    <div class="wrap">
+      <div class="kicker">Team</div>
+      <h1>Lab members</h1>
+    </div>
+  </div>
+  <div class="wrap">
+    <div id="team-root">
+        <section class="team-group">
+          <h2>Principal Investigator</h2>
+          <div class="people">
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_3695320e339749c6a9d66f9170206c43~mv2.jpg/v1/crop/x_0,y_4,w_524,h_712/fill/w_226,h_307,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2023%20headshot%20zoomed%20out_edited.jpg" alt="Isha Jain" loading="lazy" data-initials="IJ" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Isha Jain, PhD</h3>
+          <div class="rl">Associate Professor and Core Investigator</div>
+          
+          <p class="bio">Isha received her undergraduate degree in Chemical and Physical Biology from Harvard University. Subsequently, she joined the Harvard-MIT Program in Health Sciences and Technology. During her PhD, she discovered that hypoxia could serve as a therapy for mitochondrial disorders. This work led to a Phase 1 clinical trial. Isha began as a UCSF Sandler Faculty Fellow and then joined the Gladstone Institutes and UCSF in 2021, followed by becoming an Arc Core Investigator in 2025. She has received the NIH Early Independence Award (DP5), NIH Transformative R01 Award (TR01), HHMI Freeman Hrabowski Award (declined), Searle Scholar Award, Klingenstein-Simons Award and Keck Medical Research Award.</p>
+        </div>
+      </article></div>
+        </section>
+        <section class="team-group">
+          <h2>Staff Scientists</h2>
+          <div class="people">
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_f7ee47a166ad4bbea5f537651fd2e763~mv2.jpg/v1/crop/x_0,y_99,w_887,h_1023/fill/w_208,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/_DSC2464_edited_edited.jpg" alt="Galih Haribowo" loading="lazy" data-initials="GH" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Galih Haribowo, PhD</h3>
+          <div class="rl">Staff Scientist</div>
+          <div class="tags"><span class="tag">CIRM Fellow</span></div>
+          <p class="bio">Galih received his bachelor's degree in Biology from Gadjah Mada University. He then joined the labs of Joost Holthuis at Utrecht University and Anne-Claude Gavin at the EMBL-Heidelberg to study protein-lipid interactions for his master's degree. During his PhD, he worked in the labs of Howard Riezman at University of Geneva and Maya Schuldiner at the Weizmann Institute of Science, studying the roles of sphingolipid in neurodegenerative disease and ischemia-reperfusion injury. Galih is currently interested in understanding nutrient dependencies of cells under hypoxia and ischemia.</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_ac77a807041a40a7a10a4506e0b23916~mv2.jpg/v1/crop/x_1592,y_156,w_2653,h_3058/fill/w_208,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/_BBB2868_JPG.jpg" alt="Ankur Garg" loading="lazy" data-initials="AG" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Ankur Garg, PhD</h3>
+          <div class="rl">Staff Scientist</div>
+          <div class="tags"><span class="tag">CIRM Fellow</span></div>
+          <p class="bio">Ankur attended IIT Delhi for her undergraduate studies in Biochemical Engineering and Biotechnology. She received her PhD in Molecular Biology and Genetics, in the lab of Xin Zhang at Columbia University studying the role of Fgf signaling in tear gland development. During a post-doc at UCSD, she worked in the lab of Xin Sun where she studied pulmonary neuroendocrine cells. She is now interested in studying the signaling mechanisms underlying hypoxia as a therapeutic intervention for neurodegenerative and metabolic disorders.</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_5e1568d5cbd34e53aad2cd38d63e3e7a~mv2.jpg/v1/crop/x_0,y_629,w_3527,h_4033/fill/w_216,h_270,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/navdar_sever02.jpg" alt="Navdar Sever" loading="lazy" data-initials="NS" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Navdar Sever, PhD</h3>
+          <div class="rl">Staff Scientist</div>
+          
+          <p class="bio">Navdar received his undergraduate degree in Molecular Biology and Genetics from Bilkent University in Turkey and his PhD in Cell Regulation from University of Texas Southwestern Medical Center at Dallas. During his PhD, he worked in the labs of Mike Brown and Joe Goldstein, where he discovered Insig-mediated regulation of mammalian HMG CoA reductase ubiquitination and degradation. Subsequently, he did postdoctoral research on Hedgehog signal transduction pathway at The Johns Hopkins University and Stanford University, and on lung surfactant at Harvard Medical School. After working at a food-tech startup for a couple of years, Navdar is excited to return to basic biomedical research.</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_033c8b5942844da49fa7b1d8d900f5ff~mv2.jpg/v1/crop/x_0,y_21,w_554,h_693/fill/w_216,h_314,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Headshot_Yohei.jpg" alt="Yohei Abe" loading="lazy" data-initials="YA" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Yohei Abe, PhD</h3>
+          <div class="rl">Staff Scientist</div>
+          
+          <p class="bio">Yohei earned his undergraduate and master's degrees in pharmacology from the Tokyo University of Pharmacy and Life Sciences and is a certified pharmacist. His early research focused on cardiac mitochondrial function in heart failure rodent models. During his PhD at the University of Tokyo in Dr. Juro Sakai's lab, he studied epigenetic regulation in adipocytes to explore new clinical applications for obesity and diabetes. As a postdoc with Dr. Christopher K. Glass at UC San Diego, he expanded his expertise to chromatin dynamics and the epigenetic regulation of macrophage responses to environmental signals. Yohei is interested in investigating how vitamins influence gene regulation under physiological and pathological conditions. His ultimate goal is to contribute to drug discovery by translating basic research into clinical applications.</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_54197d05e907445d8c349c1de000eaee~mv2.jpg/v1/crop/x_35,y_0,w_409,h_720/fill/w_216,h_378,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2024_nico_headshots-jw-47_720.jpg" alt="John Widen" loading="lazy" data-initials="JW" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">John Widen, PhD</h3>
+          <div class="rl">Staff Scientist</div>
+          
+          <p class="bio">John completed his undergraduate studies in chemistry at the University of Iowa. He matriculated to the University of Minnesota for graduate school where he worked in Daniel Harki's lab in the Department of Medicinal Chemistry, developing natural product-inspired cysteine-reactive small molecules towards transcription factors. After obtaining his PhD, John joined Matthew Bogyo's lab at Stanford University in the Department of Pathology as a post-doctoral scholar. He developed quenched fluorescent substrates for in vivo imaging and fluorescence-guided surgery applications. John was awarded an NIH Ruth L. Kirschstein Individual National Research Service Award (F32) and an American Cancer Society Postdoctoral Award. John has greater than five years of experience as a medicinal chemist in biotech, developing small-molecule therapeutics towards challenging oncology and neurodegenerative drug targets. He has contributed to more than 7 patent applications. At Arc Institute, John is focused on the discovery and development of therapeutics towards novel drug targets involved in age-related diseases.</p>
+        </div>
+      </article></div>
+        </section>
+        <section class="team-group">
+          <h2>Postdoctoral Fellows</h2>
+          <div class="people">
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_2ff6f2765292423e9dafb6224a641f24~mv2.jpg/v1/crop/x_1558,y_84,w_2504,h_3303/fill/w_206,h_272,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/_BBB2887_JPG.jpg" alt="Yolanda Martí-Mateos" loading="lazy" data-initials="YM" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Yolanda Martí-Mateos, PhD</h3>
+          <div class="rl">Postdoctoral Fellow</div>
+          <div class="tags"><span class="tag">CIRM Fellow</span></div>
+          <p class="bio">Yolanda received her undergraduate degree in Biochemistry from Universidad Autónoma de Madrid. There, she worked at the Biochemistry Department to study mitochondrial cardiomyopathy models in Drosophila melanogaster. For her PhD, she joined Dr. José Antonio Enríquez's lab at the Spanish National Center for Cardiovascular Research (CNIC) to work on murine models for heart failure therapies targeting mitochondrial protease OMA1. Following her work on age-associated chronic liver disease, she became interested in the study of aging etiology. At the Jain Lab, Yolanda is excited to be studying how molecular oxygen can modulate the aging process.</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_ca9b197ab2e044dab2f0396938619da1~mv2.jpg/v1/crop/x_576,y_390,w_1219,h_1394/fill/w_216,h_247,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Gautam_Headshot.jpg" alt="Gautam Susarla" loading="lazy" data-initials="GS" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Gautam Susarla, PhD</h3>
+          <div class="rl">Postdoctoral Fellow</div>
+          
+          <p class="bio">Gautam was born and raised in India. He earned his undergraduate degree in Life Sciences from Osmania University in Hyderabad. Following this, he joined the integrated master's and PhD program at the Indian Institute of Science (IISc) in Bangalore, where he had the opportunity to explore multiple scientific disciplines. For his doctoral research, he joined Dr. Patrick D'Silva's lab, focusing on the role of DJ-1 and its homologs in alleviating metabolic stress in Parkinson's disease. His current research interests focus on deciphering regulatory proteins that interact with vitamins.</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_420500668c104d09bc623e72caa8ce1a~mv2.jpeg/v1/crop/x_0,y_125,w_1316,h_1504/fill/w_210,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/0.jpeg" alt="Jonathan Tai" loading="lazy" data-initials="JT" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Jonathan Tai, MD, PhD</h3>
+          <div class="rl">Postdoctoral Fellow</div>
+          <div class="tags"><span class="tag">UCSF Physician-Scientist Pathway</span></div>
+          <p class="bio">Jon received his undergraduate degree in Biochemistry from the University of Illinois at Urbana-Champaign. He subsequently completed his medical and graduate training at the University of Wisconsin–Madison, where he worked in the lab of David Pagliarini studying coenzyme Q biosynthesis. Jon is currently a clinical pathology resident at UCSF through the Physician-Scientist Pathway.</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_5a57acbe0176404f9eeb16de58b37043~mv2.jpg/v1/crop/x_0,y_0,w_1058,h_1209/fill/w_210,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Rachael%20McMinimy.jpg" alt="Rachael McMinimy" loading="lazy" data-initials="RM" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Rachael McMinimy, PhD</h3>
+          <div class="rl">Postdoctoral Fellow</div>
+          <div class="tags"><span class="tag">Damon Runyon Fellow</span></div>
+          <p class="bio">Rachael grew up in Bar Harbor, Maine and attended Oberlin College, where she majored in biology and neuroscience. Following her graduation, she worked as a research technician in Dr. Samara Reck-Peterson's lab at UCSD studying regulation of the motor protein, dynein. For her PhD, she joined Dr. Michael Rapé's lab at UC Berkeley where she investigated how reactive oxygen species regulate mitochondrial metabolism. Outside of lab, Rachael enjoys spending time outside and teaching her cat new tricks.</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_d81f168995c142cf8f266c8c5327d577~mv2.jpg/v1/crop/x_89,y_0,w_389,h_445/fill/w_210,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nicholson_headshot_720.jpg" alt="Rebekah Nicholson" loading="lazy" data-initials="RN" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Rebekah Nicholson, PhD</h3>
+          <div class="rl">Postdoctoral Fellow</div>
+          
+          <p class="bio">Bekah grew up in Whitefish, Montana, and received her undergraduate degree in Nutrition Science from Montana State University. She moved on to complete her MS and PhD at the University of Utah under the joint supervision of Scott Summers and Will Holland characterizing human genetic variants affecting sphingolipid metabolism and studying the role of ceramides in metabolic and renal pathologies. In the Jain lab, Bekah will focus on investigating vitamin-protein interactions. In her free time, Bekah loves outdoor activities with her dog, exploring new places, and playing music.</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_628499d17677403d9adca6cee39adac8~mv2.jpg/v1/crop/x_338,y_311,w_591,h_737/fill/w_210,h_262,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Biki%20Headshot.jpg" alt="Biki Kundu" loading="lazy" data-initials="BK" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Biki Kundu, PhD</h3>
+          <div class="rl">Postdoctoral Fellow</div>
+          
+          <p class="bio">Biki grew up in India and received his undergraduate degree from the Indian Institute of Technology Kharagpur. He completed his PhD in Systems, Synthetic, and Physical Biology at Rice University in the lab of Caroline Ajo-Franklin, where he investigated electron flux in electroactive bacteria and engineered bioelectronic interfaces for environmental sensing and biomanufacturing. At the Jain Lab, Biki is pivoting to mammalian systems to interrogate the control architecture of human metabolism and test how pathway rewiring shapes cellular physiology in health and disease. Outside the lab, Biki is still working out life's larger questions and has concluded that cooking is always a reasonable place to start.</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_91affc5a54174ebcb686d23de7e38d41~mv2.jpeg/v1/crop/x_25,y_0,w_1372,h_1568/fill/w_210,h_284,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/0.jpeg" alt="Yaereen Dho" loading="lazy" data-initials="YD" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Yaereen Dho, PhD</h3>
+          <div class="rl">Postdoctoral Fellow</div>
+          
+          <p class="bio">Yaereen received her BS in Chemistry (specialization in biochemistry) from New York University Abu Dhabi, where she worked in Prof. Ali Trabolsi's lab developing triphenylphosphine-modified gold nanoparticles for photothermal chemotherapy and covalent organic frameworks loaded with AuNPs for catalysts. She then moved to Stanford for a PhD, where she joined Prof. Elizabeth Sattely's lab for research on the discovery and characterization of new enzymes and intermediates involved in the biosynthesis of medicinal plant molecules. In the Jain lab, Yaereen is interested in investigating potential new micronutrients and vitamin mechanisms. Outside the lab, she enjoys running, singing, and playing the piano.</p>
+        </div>
+      </article></div>
+        </section>
+        <section class="team-group">
+          <h2>Graduate Students</h2>
+          <div class="people">
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_dc9f0c83d2ef4271803c384251b96d85~mv2.jpg/v1/crop/x_1840,y_133,w_2052,h_2367/fill/w_208,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/_BBB2932_JPG.jpg" alt="Brandon Desousa" loading="lazy" data-initials="BD" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Brandon Desousa, BS</h3>
+          <div class="rl">BMS Graduate Student</div>
+          <div class="tags"><span class="tag">NDSEG Fellow</span></div>
+          <p class="bio">Brandon was born and raised in South Florida. He received a BS in Biochemistry and Neuroscience at the University of Miami. There, he worked on how neural stem cells can contribute to recovery after a brain injury. He then joined Dr. Ajit Divakaruni's mitochondrial bioenergetics lab at UCLA and studied the bioenergetics of glioblastoma and macrophage inflammatory activation. Outside of the lab, Brandon enjoys discovering new films at independent cinemas, and working towards crafting the perfect cup of coffee.</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_99a4076d842845d7ae402a038ab05bcb~mv2.jpg/v1/crop/x_1824,y_243,w_1998,h_2305/fill/w_208,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/_BBB2979_JPG.jpg" alt="Brandon Chew" loading="lazy" data-initials="BC" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Brandon Chew, BS</h3>
+          <div class="rl">PSPG Graduate Student</div>
+          <div class="tags"><span class="tag">NSF Fellow</span></div>
+          <p class="bio">Brandon was born and raised in Hawaii on the island of Oahu. He received a BS in chemical engineering from the University of Southern California. At USC, he worked in the lab of Dr. Nicolas Graham where he helped to develop a protocol for enriching and detecting protein methylation via liquid chromatography-mass spectroscopy and analyzed multiple public data sets to determine metabolic pathway dependencies in cancer cell lines. Outside of lab, Brandon enjoys hiking, playing video games, and exploring ramen shops.</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_b85dbedefa674ba089f89086406a8447~mv2.jpg/v1/crop/x_1769,y_179,w_2432,h_2877/fill/w_224,h_266,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/_BBB2949_JPG.jpg" alt="Ayush Midha" loading="lazy" data-initials="AM" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Ayush Midha, BS</h3>
+          <div class="rl">Tetrad MD/PhD Student</div>
+          <div class="tags"><span class="tag">NIH F30 Fellow</span></div>
+          <p class="bio">Ayush grew up in San Jose, California, and attended Harvard University, where he majored in developmental biology. As an undergraduate student, he worked in the labs of Dr. Susan Bonner-Weir and Dr. Cristina Aguayo-Mazzucato at Joslin Diabetes Center. There, he studied mechanisms of aging in pancreatic beta-cells and the secretory changes associated with cellular senescence. At UCSF, Ayush is excited about advocating for universal healthcare and studying metabolism in physiology and disease. In his free time, he loves watching and playing basketball, experimenting with new recipes on his cast-iron skillet, and seeing new movies.</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_414af7f5f2a945eb9c4ec5e2d85d631c~mv2.jpeg/v1/crop/x_175,y_86,w_568,h_632/fill/w_215,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/092D428C-18AF-4A72-B621-A086BF3CD5FE_1_105_c.jpeg" alt="Will Flanigan" loading="lazy" data-initials="WF" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Will Flanigan, BS</h3>
+          <div class="rl">Bioengineering Graduate Student</div>
+          <div class="tags"><span class="tag">NIH F31 Fellow</span></div>
+          <p class="bio">Will was born and raised in Madison, Wisconsin. He attended UW-Madison, earning his BS in Biomedical Engineering and Biochemistry. There, he worked in the lab of Dr. Pam Kreeger studying the microenvironmental factors that drive metastasis in ovarian cancer. At UCSF, Will is excited to investigate cardiac hypoxia/ischemia using iPSC-derived cardiac cell types. Outside of lab, Will loves to run and is learning how to make the perfect charcuterie board.</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_95e1089dcd82442c9c45492a726329cc~mv2.jpg/v1/crop/x_2128,y_201,w_1837,h_1847/fill/w_210,h_211,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/455A2205_JPG.jpg" alt="Helen Huynh" loading="lazy" data-initials="HH" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Helen Huynh, BS, MS</h3>
+          <div class="rl">BMS Graduate Student</div>
+          
+          <p class="bio">Helen grew up in Fremont, California, and attended the University of California, San Diego, where she earned a BS and MS in Biology. At UCSD, she worked in the lab of Dr. Xi Fang studying the DELE1-mediated mitochondrial stress response in murine models of mitochondrial and acquired cardiomyopathies. In her free time, she likes to crochet, cook, and read.</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_35045180d478434f8f148fa2282e6aa3~mv2.jpg/v1/crop/x_0,y_135,w_2054,h_2299/fill/w_210,h_248,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/dang_2025.jpg" alt="Caitlyn Dang" loading="lazy" data-initials="CD" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Caitlyn Dang, BS</h3>
+          <div class="rl">BMS Graduate Student</div>
+          
+          <p class="bio">Caitlyn was raised in the Chicagoland area and majored in biochemistry at Loyola University Chicago where she worked with Dr. Joerg Zimmermann to synthesize fluorescent HIV glycoproteins for use in laser femtosecond spectroscopy. After graduating, she worked with Dr. Bin Jiang at Northwestern University to develop preclinical disease models and therapeutics for peripheral vascular diseases. At UCSF, she is excited to explore metabolic dynamics in angiogenesis. In her free time, Caitlyn loves enjoying a good latte and spending time with her cat, Miso.</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_81d9e924c2dc44d6aba0752a877e2274~mv2.png/v1/crop/x_75,y_0,w_569,h_672/fill/w_210,h_270,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/maia_headshot_720.png" alt="Maia Madison" loading="lazy" data-initials="MM" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Maia Madison, BS</h3>
+          <div class="rl">MSTP MD/PhD Graduate Student</div>
+          
+          <p class="bio">Maia attended Dartmouth College where she studied Ecology, Evolution, Environment &amp; Society. During college, she worked in the Lee Lab designing immunogens to study influenza antibody repertoires, and at the Broad Institute/Photys Therapeutics using computational tools to design chimeric small molecules. As a Fulbright scholar in Eswatini, she evaluated next-generation sequencing diagnostics for drug-resistant tuberculosis, and at UCSF she has contributed to developing diagnostics for infection-associated chronic illnesses. Across these experiences, Maia has been fascinated by evolution and in the Jain Lab she is excited to study the role of oxygen in shaping metabolism and physiology.</p>
+        </div>
+      </article></div>
+        </section>
+        <section class="team-group">
+          <h2>Research &amp; Operations</h2>
+          <div class="people">
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_f60d962873d14c83bcd44cf30e5a4a3c~mv2.jpg/v1/crop/x_0,y_136,w_1001,h_1155/fill/w_214,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/_DSC2437_edited_edited.jpg" alt="Skyler Blume" loading="lazy" data-initials="SB" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Skyler Blume, BS</h3>
+          <div class="rl">Lab Manager and Research Associate</div>
+          
+          <p class="bio">Skyler grew up in Davis, California and received his Bachelor's Degree from UC Berkeley, where he majored in Molecular and Cell Biology. There, he worked in the lab of Gertrude Buehring where he studied Bovine Leukemia Virus as a potential etiological agent of breast cancer. He went on to work for a pathology practice in San Diego, where he performed immunohistochemistry. In his free time he enjoys learning about new cuisines, exploring nature, and listening to podcasts.</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_3381151796984d3fbf4bff1e62edf961~mv2.jpg/v1/crop/x_407,y_39,w_1400,h_1507/fill/w_210,h_226,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/127a9282_edited.jpg" alt="Nysa Adurkar" loading="lazy" data-initials="NA" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Nysa Adurkar, BS</h3>
+          <div class="rl">Research Associate</div>
+          
+          <p class="bio">Nysa grew up in Mumbai, India and received her undergraduate degree from Johns Hopkins University in Molecular and Cellular Biology and Economics. At JHU, she worked in the lab of Dr. Maria Golson, studying the role of targeted estrogen therapy in pancreatic beta-cells as a potential therapy for gestational diabetes. Outside of the lab, she enjoys trying new restaurants, hiking and watching new tv shows.</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_11ee41a7a2624a4e8b0015d63c05c71b~mv2.jpg/v1/crop/x_0,y_72,w_3024,h_3888/fill/w_210,h_226,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/unnamed.jpg" alt="Fangyuan Gao" loading="lazy" data-initials="FG" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Fangyuan Gao, PhD</h3>
+          <div class="rl">Mass Spectrometry Core Manager</div>
+          
+          <p class="bio">Fangyuan is an analytical scientist specializing in mass spectrometry–based proteomics, lipidomics, and peptidomics. She has extensive experience developing and applying LC–MS workflows to support biological and translational research. At Arc, Fangyuan focuses on advancing analytical strategies to enable high-quality molecular characterization and to support collaborative projects across research teams.</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_936e0bf60eea488ab872e8eed270c147~mv2.jpg/v1/crop/x_1193,y_220,w_1598,h_1957/fill/w_214,h_253,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_6240_JPG.jpg" alt="Emma Straight" loading="lazy" data-initials="ES" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
+        <div class="info">
+          <h3 class="nm">Emma Straight, BS</h3>
+          <div class="rl">Administrative Associate</div>
+          
+          <p class="bio">Emma graduated from Santa Clara University and holds a Bachelor's Degree in both Psychology and Public Health. During her time in college, she worked in a psychology lab and served as a student manager for the public health department &amp; school of law. In addition to Emma's professional pursuits, she has a passion for live music, skiing, surfing, exercise, film photography, and travel. These interests allow her to maintain a well-rounded perspective and bring creativity and adaptability to her work.</p>
+        </div>
+      </article></div>
+        </section></div>
+  </div>
+  <section class="block soft" id="alumni" style="margin-top:64px">
+    <div class="wrap">
+      <div class="section-head"><h2>Alumni</h2></div>
+      <div class="alumni-list" id="alumni-root">
+        <div class="alum">
+          <div>
+            <div class="nm">Alan Baik, MD</div>
+            <div class="rl">Postdoctoral Fellow</div>
+          </div>
+          <div class="dt">Dec 2020 – Feb 2026</div>
+          <div class="nw"><span>Now</span>Assistant Professor / PI, UCSF · <a href="https://www.baik-lab.com" target="_blank" rel="noopener">Baik Lab</a></div>
+        </div>
+        <div class="alum">
+          <div>
+            <div class="nm">Tej Joshi, BS</div>
+            <div class="rl">Research Associate</div>
+          </div>
+          <div class="dt">Jul 2023 – Feb 2026</div>
+          <div class="nw"><span>Now</span>Medical Student</div>
+        </div>
+        <div class="alum">
+          <div>
+            <div class="nm">Onurkan Karabulut</div>
+            <div class="rl">CIRM Intern</div>
+          </div>
+          <div class="dt">Aug 2023 – Aug 2024</div>
+          <div class="nw"></div>
+        </div>
+        <div class="alum">
+          <div>
+            <div class="nm">Kirsten Chen, PhD</div>
+            <div class="rl">Graduate Student Researcher</div>
+          </div>
+          <div class="dt">Sep 2018 – Jun 2024</div>
+          <div class="nw"><span>Now</span>Life Science Strategy Consulting, L.E.K.</div>
+        </div>
+        <div class="alum">
+          <div>
+            <div class="nm">Saahil Chadha, BA</div>
+            <div class="rl">Undergraduate Researcher</div>
+          </div>
+          <div class="dt">Oct 2019 – Aug 2022</div>
+          <div class="nw"><span>Now</span>MD Student, Yale School of Medicine</div>
+        </div>
+        <div class="alum">
+          <div>
+            <div class="nm">Yuyin Zhou, PhD</div>
+            <div class="rl">Research Associate</div>
+          </div>
+          <div class="dt">Apr 2021 – Jun 2022</div>
+          <div class="nw"><span>Now</span>Technical Development Senior Scientist, Genentech</div>
+        </div>
+        <div class="alum">
+          <div>
+            <div class="nm">Alec Barrios, BS</div>
+            <div class="rl">Research Associate</div>
+          </div>
+          <div class="dt">Jul 2019 – May 2021</div>
+          <div class="nw"><span>Now</span>PhD Student, Broad Institute of MIT &amp; Harvard</div>
+        </div>
+        <div class="alum">
+          <div>
+            <div class="nm">Bruno Barros Queliconi, PhD</div>
+            <div class="rl">Senior Staff Scientist</div>
+          </div>
+          <div class="dt">Nov 2019 – Apr 2021</div>
+          <div class="nw"><span>Now</span>Director, Corporate Strategy Group, AbbVie</div>
+        </div></div>
+    </div>
+  </section>
+</main>
+</section>
+<section data-static-view="publications">
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <div class="kicker">Publications</div>
+      <h1>Papers and preprints</h1>
+      <div class="pub-controls" style="margin-top:26px">
+        <input class="search" id="pub-search" type="search" placeholder="Search publications…" aria-label="Search publications">
+      </div>
+      <div class="filter-row">
+        <span class="filter-label">Topic</span>
+        <div class="themes" id="pub-topics"><button class="chip" aria-pressed="true" data-topic="All">All topics</button><button class="chip" aria-pressed="false" data-topic="Oxygen">Oxygen</button><button class="chip" aria-pressed="false" data-topic="Vitamins">Vitamins</button></div>
+        <span class="filter-label" style="margin-left:56px">Type</span>
+        <div class="themes" id="pub-status"><button class="chip" aria-pressed="true" data-status="All">All types</button><button class="chip" aria-pressed="false" data-status="Published">Published</button><button class="chip" aria-pressed="false" data-status="Preprint">Preprints</button></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div id="pub-root"><h2 class="pub-year">2026</h2>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://www.cell.com/trends/biochemical-sciences/fulltext/S0968-0004(26)00217-3" target="_blank" rel="noopener">The diversity of terminal electron acceptors across eukaryotes</a>
+              <div class="a">A. D. Midha, I. H. Jain</div>
+              <div class="j"><em>Trends in Biochemical Sciences</em> (2026)</div>
+              
+            </div>
+            <div class="side"><span class="pill review">Review</span></div>
+          </article>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://www.biorxiv.org/content/10.64898/2026.07.16.738975v1" target="_blank" rel="noopener">The disease gene THAP12 is a transcriptional regulator of mitochondrial ETC Complex I</a>
+              <div class="a">B. R. Desousa, Y. Abe, M. Kampmann, I. H. Jain</div>
+              <div class="j"><em>bioRxiv</em> (2026)</div>
+              
+            </div>
+            <div class="side"><span class="pill preprint">Preprint</span></div>
+          </article>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://www.nature.com/articles/s42255-026-01566-0" target="_blank" rel="noopener">Hypoxia rescues complex 1-associated disease caused by proteostatic defects</a>
+              <div class="a">A. Garg, B. R. Desousa, R. Roy, A. Flis, S. Y. Blume, Y. Abe, A. A. Melo, R. R. Cupo, G. Grigorean, D. R. Southworth, J. Shorter, I. H. Jain</div>
+              <div class="j"><em>Nature Metabolism</em>, 8, 1791–1804 (2026)</div>
+              <div class="extras"><a class="extra-news" href="https://gladstone.org/news/controlling-oxygen-fight-disease" target="_blank" rel="noopener">Gladstone: Controlling oxygen to fight disease</a></div>
+            </div>
+            <div class="side"><span class="pill featured">Selected</span></div>
+          </article>
+          <article class="pub" data-theme="Vitamins">
+            <div>
+              <a class="t" href="https://www.sciencedirect.com/science/article/pii/S0092867426001091" target="_blank" rel="noopener">Vitamin B2 and B3 nutrigenomics reveals a therapy for NAXD disease</a>
+              <div class="a">A. Garg, S. Y. Blume, H. Huynh, A. M. Barrios, O. O. Karabulut, Q. Zhao, A. D. Midha, A. W. Turner, B. V. Resnick, X. Chen, A. Agrawal, J. Kim, L. Chen, Q. Ran, A. M. Ryan, R. C. Larson, M. Negahban, S. C. K. Nelson, A. C. Yang, M. Traglia, R. Thomas, R. Sun, M. Paredes, M. R. Corces, H. Lin, I. H. Jain</div>
+              <div class="j"><em>Cell</em>, 189, 2648–2662 (2026)</div>
+              <div class="extras"><a class="extra-news" href="https://gladstone.org/news/vitamin-b3-therapy-offers-hope-fatal-childhood-disease" target="_blank" rel="noopener">Gladstone: Vitamin B3 therapy offers hope for fatal childhood disease</a><a class="extra-news" href="https://arcinstitute.org/news/vitamin-hunters" target="_blank" rel="noopener">Arc Institute: Vitamin hunters</a><a href="https://youtu.be/v2dQjNjwwgQ" target="_blank" rel="noopener">Video summary</a></div>
+            </div>
+            <div class="side"><span class="pill featured">Selected</span></div>
+          </article>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://www.cell.com/cell-metabolism/fulltext/S1550-4131(26)00018-5" target="_blank" rel="noopener">Red blood cells serve as a primary glucose sink to improve glucose tolerance at altitude</a>
+              <div class="a">Y. Martí-Mateos, Z. Safari, S. Bevers, A. D. Midha, W. R. Flanigan, T. Joshi, H. Huynh, B. R. Desousa, S. Y. Blume, A. H. Baik, S. Rogers, A. V. Issaian, A. Doctor, A. D'Alessandro, I. H. Jain</div>
+              <div class="j"><em>Cell Metabolism</em>, 38, 529–545 (2026)</div>
+              <div class="extras"><a class="extra-news" href="https://gladstone.org/news/red-blood-cells-soak-sugar-high-altitude-protecting-against-diabetes" target="_blank" rel="noopener">Gladstone: Red blood cells soak up sugar at high altitude</a><a class="extra-news" href="https://arcinstitute.org/news/red-blood-cells-glucose-altitude" target="_blank" rel="noopener">Arc Institute: Red blood cells, glucose, altitude</a></div>
+            </div>
+            <div class="side"><span class="pill featured">Selected</span></div>
+          </article>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://www.biorxiv.org/content/10.64898/2026.02.09.704975v1" target="_blank" rel="noopener">Systemic hypoxia suppresses solid tumor growth</a>
+              <div class="a">A. D. Midha, B. T. L. Chew, B. M. H. Choi, J. M. Suh, C. Carpenter, A. H. Baik, T. Joshi, S. Y. Blume, A. G. Haribowo, P. Ruivo, W. R. Flanigan, A. Garg, D. D. Zhang, V. Subramanyam, R. Shuere, Y. Seo, H. VanBrocklin, H. Goodarzi, I. H. Jain</div>
+              <div class="j"><em>bioRxiv</em> (2026)</div>
+              
+            </div>
+            <div class="side"><span class="pill preprint">Preprint</span></div>
+          </article>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://www.biorxiv.org/content/10.64898/2026.01.26.701810v1" target="_blank" rel="noopener">Genome-wide CRISPRi screen identifies basigin loss as protective in cardiac hypoxia</a>
+              <div class="a">W. R. Flanigan, A. D. Midha, S. Y. Blume, Y. Martí-Mateos, M. W. Costa, Y. Huang, A. H. Baik, H. Huynh, G. Susarla, N. K. Bennett, R. A. Nowak, D. Srivastava, K. Nakamura, I. H. Jain</div>
+              <div class="j"><em>bioRxiv</em> (2026)</div>
+              
+            </div>
+            <div class="side"><span class="pill preprint">Preprint</span></div>
+          </article><h2 class="pub-year">2025</h2>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://www.cell.com/cell/fulltext/S0092-8674(25)00098-4" target="_blank" rel="noopener">HypoxyStat, a small-molecule form of hypoxia therapy that increases oxygen-hemoglobin affinity</a>
+              <div class="a">S. Y. Blume, A. Garg, Y. Martí-Mateos, A. D. Midha, B. T. L. Chew, B. Lin, C. Yu, R. Dick, P. S. Lee, E. Situ, R. Sarwaikar, E. Green, V. Ramanan, G. Grotenbreg, M. Hoek, C. Sinz, I. H. Jain</div>
+              <div class="j"><em>Cell</em>, 188, 1580–1588 (2025)</div>
+              <div class="extras"><a class="extra-news" href="https://gladstone.org/news/daily-drug-captures-health-benefits-high-altitude-low-oxygen-living" target="_blank" rel="noopener">Gladstone: Daily drug captures health benefits of high-altitude living</a><a href="https://www.youtube.com/watch?v=J-LY9Hov1NI" target="_blank" rel="noopener">Video summary</a><a href="https://www.cell.com/cell/fulltext/S0092-8674(25)00207-7" target="_blank" rel="noopener">Journal preview</a></div>
+            </div>
+            <div class="side"><span class="pill featured">Selected</span></div>
+          </article><h2 class="pub-year">2023</h2>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://www.science.org/doi/10.1126/sciadv.adj4884" target="_blank" rel="noopener">In vivo protein turnover rates in varying oxygen tensions nominate MYBBP1A as a mediator of the hyperoxia response</a>
+              <div class="a">X. Chen, A. G. Haribowo, A. H. Baik, A. Fossati, E. Stevenson, Y. R. Chen, N. S. Reyes, T. Peng, M. A. Matthay, M. Traglia, A. R. Pico, D. F. Jarosz, A. Buchwalter, S. Ghaemmaghami, D. L. Swaney, I. H. Jain</div>
+              <div class="j"><em>Science Advances</em>, 9, eadj4884 (2023)</div>
+              <div class="extras"><a class="extra-news" href="https://gladstone.org/news/dynamic-picture-how-we-respond-high-or-low-oxygen-levels" target="_blank" rel="noopener">Gladstone: A dynamic picture of how we respond to high or low oxygen</a></div>
+            </div>
+            <div class="side"></div>
+          </article>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://www.cell.com/molecular-cell/fulltext/S1097-2765(23)00116-8" target="_blank" rel="noopener">Oxygen toxicity causes cyclic damage by destabilizing specific Fe-S cluster-containing protein complexes</a>
+              <div class="a">A. H. Baik*, A. G. Haribowo*, X. Chen*, B. B. Queliconi, A. M. Barrios, A. Garg, M. Maishan, A. R. Campos, M. A. Matthay, I. H. Jain (*equal contribution)</div>
+              <div class="j"><em>Molecular Cell</em>, 83, 942–960 (2023)</div>
+              <div class="extras"><a class="extra-news" href="https://gladstone.org/news/researchers-discover-how-too-much-oxygen-damages-cells-and-tissues" target="_blank" rel="noopener">Gladstone: How too much oxygen damages cells and tissues</a></div>
+            </div>
+            <div class="side"><span class="pill featured">Selected</span></div>
+          </article>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://www.cell.com/cell-metabolism/fulltext/S1550-4131(23)00043-8" target="_blank" rel="noopener">Organ-specific fuel rewiring in acute and chronic hypoxia redistributes glucose and fatty acid metabolism</a>
+              <div class="a">A. D. Midha*, Y. Zhou*, B. B. Queliconi, A. M. Barrios, A. G. Haribowo, B. T. L. Chew, C. O. Y. Fong, J. E. Blecha, H. VanBrocklin, Y. Seo, I. H. Jain (*equal contribution)</div>
+              <div class="j"><em>Cell Metabolism</em>, 35, 504–516 (2023)</div>
+              <div class="extras"><a class="extra-news" href="https://gladstone.org/news/how-high-altitude-changes-your-bodys-metabolism" target="_blank" rel="noopener">Gladstone: How high altitude changes your body's metabolism</a><a href="https://www.cell.com/cell-metabolism/fulltext/S1550-4131(23)00047-5" target="_blank" rel="noopener">Journal preview</a></div>
+            </div>
+            <div class="side"><span class="pill featured">Selected</span></div>
+          </article><h2 class="pub-year">2022</h2>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://www.nature.com/articles/s44161-022-00178-7" target="_blank" rel="noopener">The Goldilocks oxygen principle: not too little and not too much</a>
+              <div class="a">W. R. Flanigan, I. H. Jain</div>
+              <div class="j"><em>Nature Cardiovascular Research</em>, 1, 1101–1103 (2022)</div>
+              
+            </div>
+            <div class="side"></div>
+          </article>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://aacrjournals.org/cancerdiscovery/article/12/9/2198/708778/Coordinated-Transcriptional-and-Catabolic-Programs" target="_blank" rel="noopener">Coordinated transcriptional and catabolic programs support iron-dependent adaptation to RAS–MAPK pathway inhibition in pancreatic cancer</a>
+              <div class="a">M. Ravichandran, J. Hu … B. R. Desousa … I. H. Jain … R. M. Perera</div>
+              <div class="j"><em>Cancer Discovery</em>, 12, 2198–2219 (2022)</div>
+              
+            </div>
+            <div class="side"></div>
+          </article><h2 class="pub-year">2021</h2>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://www.science.org/doi/10.1126/science.aba0629" target="_blank" rel="noopener">Airway stem cells sense hypoxia and differentiate into protective solitary neuroendocrine cells</a>
+              <div class="a">M. Shivaraju, U. K. Chitta, R. M. H. Grange, I. H. Jain … J. Rajagopal</div>
+              <div class="j"><em>Science</em>, 371, 52–57 (2021)</div>
+              
+            </div>
+            <div class="side"></div>
+          </article><h2 class="pub-year">2020</h2>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://www.sciencedirect.com/science/article/pii/S096289242030091X?via%3Dihub" target="_blank" rel="noopener">Turning the oxygen dial: balancing the highs and lows</a>
+              <div class="a">A. H. Baik, I. H. Jain</div>
+              <div class="j"><em>Trends in Cell Biology</em>, 30, 516–536 (2020)</div>
+              
+            </div>
+            <div class="side"><span class="pill review">Review</span></div>
+          </article>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://www.cell.com/cell/fulltext/S0092-8674(20)30321-4" target="_blank" rel="noopener">Genetic screen for cell fitness in high or low oxygen highlights mitochondrial and lipid metabolism</a>
+              <div class="a">I. H. Jain*, S. E. Calvo*, A. L. Markhard … V. K. Mootha (*equal contribution)</div>
+              <div class="j"><em>Cell</em>, 181, 716–727 (2020)</div>
+              
+            </div>
+            <div class="side"><span class="pill featured">Selected</span></div>
+          </article><h2 class="pub-year">2019</h2>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://www.cell.com/cell-metabolism/fulltext/S1550-4131(19)30379-1" target="_blank" rel="noopener">Leigh syndrome mouse model can be rescued by interventions that normalize brain hyperoxia, but not HIF activation</a>
+              <div class="a">I. H. Jain*, L. Zazzeron*, O. Goldberger … W. M. Zapol**, V. K. Mootha** (*, **equal contribution)</div>
+              <div class="j"><em>Cell Metabolism</em>, 30, 824–832 (2019)</div>
+              <div class="extras"><a href="https://www.cell.com/cell-metabolism/fulltext/S1550-4131(19)30507-8" target="_blank" rel="noopener">Journal preview</a></div>
+            </div>
+            <div class="side"></div>
+          </article><h2 class="pub-year">2017</h2>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://www.pnas.org/doi/10.1073/pnas.1621511114" target="_blank" rel="noopener">Hypoxia treatment reverses neurodegenerative disease in a mouse model of Leigh syndrome</a>
+              <div class="a">M. Ferrari*, I. H. Jain*, O. Goldberger … V. K. Mootha**, W. M. Zapol** (*equal contribution)</div>
+              <div class="j"><em>PNAS</em>, 114 (21), E4241–E4250 (2017)</div>
+              <div class="extras"><a class="extra-news" href="https://www.hhmi.org/news/low-oxygen-reverses-mitochondrial-disease-mice" target="_blank" rel="noopener">HHMI: Low oxygen reverses mitochondrial disease in mice</a></div>
+            </div>
+            <div class="side"></div>
+          </article><h2 class="pub-year">2016</h2>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://www.science.org/doi/10.1126/science.aad9642" target="_blank" rel="noopener">Hypoxia as a therapy for mitochondrial disease</a>
+              <div class="a">I. H. Jain, L. Zazzeron, R. Goli … F. Zhang, W. Goessling, W. M. Zapol, V. K. Mootha</div>
+              <div class="j"><em>Science</em>, 352 (6281), 54–61 (2016)</div>
+              <div class="extras"><a class="extra-news" href="https://www.science.org/content/article/oxygen-deprivation-counters-deadly-mitochondrial-disease-animals" target="_blank" rel="noopener">Science: Oxygen deprivation counters deadly mitochondrial disease</a><a href="https://www.science.org/doi/pdf/10.1126/science.aaf5248" target="_blank" rel="noopener">Journal preview</a></div>
+            </div>
+            <div class="side"><span class="pill featured">Selected</span></div>
+          </article><h2 class="pub-year">2012</h2>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://www.pnas.org/doi/10.1073/pnas.1211144109" target="_blank" rel="noopener">Spatial ordering of chromosomes enhances the fidelity of chromosome partitioning in cyanobacteria</a>
+              <div class="a">I. H. Jain*, V. Vijayan*, E. K. O'Shea (*equal contribution)</div>
+              <div class="j"><em>PNAS</em>, 109 (34), 13638–13643 (2012)</div>
+              
+            </div>
+            <div class="side"></div>
+          </article><h2 class="pub-year">2011</h2>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2011-12-5-r47" target="_blank" rel="noopener">A high resolution map of a cyanobacterial transcriptome</a>
+              <div class="a">V. Vijayan, I. H. Jain, E. K. O'Shea</div>
+              <div class="j"><em>Genome Biology</em>, 12, R47 (2011)</div>
+              
+            </div>
+            <div class="side"></div>
+          </article><h2 class="pub-year">2008</h2>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://doi.org/10.1016/j.ydbio.2008.02.051" target="_blank" rel="noopener">Connexin43 (GJA1) is required in the population of dividing cells during fin regeneration</a>
+              <div class="a">A. D. Hoptak-Solga, S. Nielsen, I. Jain, R. Thummel, D. R. Hyde, M. K. Iovine</div>
+              <div class="j"><em>Developmental Biology</em>, 317, 541–548 (2008)</div>
+              
+            </div>
+            <div class="side"></div>
+          </article><h2 class="pub-year">2007</h2>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://doi.org/10.1002/dvdy.21270" target="_blank" rel="noopener">Bone growth in zebrafish fins occurs via multiple pulses of cell proliferation</a>
+              <div class="a">I. Jain, C. Stroka, J. Yan, W.-M. Huang, M. K. Iovine</div>
+              <div class="j"><em>Developmental Dynamics</em>, 236, 2668–2674 (2007)</div>
+              
+            </div>
+            <div class="side"></div>
+          </article><h2 class="pub-year">2003</h2>
+          <article class="pub">
+            <div>
+              <a class="t" href="https://doi.org/10.1063/1.1614841" target="_blank" rel="noopener">Inhomogeneous evolution of a glass surface via free, rapid expansion</a>
+              <div class="a">A. Sharma, H. Jain, J. O. Carnali, I. H. Jain</div>
+              <div class="j"><em>Applied Physics Letters</em>, 83 (14), 2802–2804 (2003)</div>
+              
+            </div>
+            <div class="side"></div>
+          </article></div>
+  </div>
+  <div style="height:72px"></div>
+</main>
+</section>
+<section data-static-view="datasets">
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <div class="kicker">Datasets</div>
+      <h1>Explore our data</h1>
+      <p id="datasets-blurb">Data from the lab, published as interactive tools you can search and plot in the browser.</p>
+    </div>
+  </div>
+  <div class="wrap" style="padding-top:44px">
+    <div id="datasets-root">
+        <article class="dataset" data-theme="Oxygen">
+          <div class="ds-head">
+            <div>
+              <h2 class="ds-title">
+                <a href="https://jain-lab-ucsf.github.io/hypoxia-metabolomics/" target="_blank" rel="noopener">Hypoxia Tissue Metabolomics</a>
+              </h2>
+              <div class="ds-meta">
+                Built by Ayush Midha  ·  2026
+              </div>
+            </div>
+            <a class="btn btn-primary ds-open" href="https://jain-lab-ucsf.github.io/hypoxia-metabolomics/" target="_blank" rel="noopener">Explore</a>
+          </div>
+
+          <p class="ds-summary">Normalized polar metabolite abundances across brain, heart, liver, lung, muscle, plasma, and epididymal white adipose tissue. Mice were exposed to 8% or 11% oxygen for 3 hours, 24 hours, 1 week, or 3 weeks, or treated with the HIF stabilizer FG-4592 for 24 hours. Every tissue carries the same ten conditions, so panels are directly comparable.</p>
+          <div class="tags ds-facts"><span class="tag">7 tissues</span><span class="tag">10 conditions</span><span class="tag">3 hours – 3 weeks</span><span class="tag">Global metabolomics (HD4)</span></div>
+          <div class="ds-tools"><span class="ds-tools-label">In the browser</span><ul><li>Time courses</li><li>Volcano plots</li><li>Heat maps</li><li>CSV and PNG export</li></ul></div>
+          
+          <a class="ds-link" href="https://jain-lab-ucsf.github.io/hypoxia-metabolomics/" target="_blank" rel="noopener">jain-lab-ucsf.github.io/hypoxia-metabolomics</a>
+        </article></div>
+  </div>
+</main>
+</section>
+<section data-static-view="gallery">
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <div class="kicker">Gallery</div>
+      <h1>Photos</h1>
+      <p>Life in the lab.</p>
+    </div>
+  </div>
+  <div class="wrap" style="padding-top:44px;padding-bottom:80px">
+    <div class="gallery" id="gallery-root"><figure><img src="images/gallery/01-316e3f3792.webp" alt="Jain Lab photo 1" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="0"></figure><figure><img src="images/gallery/02-b42e6f66b2.webp" alt="Jain Lab photo 2" title="" loading="lazy" decoding="async" width="1050" height="1400" data-i="1"></figure><figure><img src="images/gallery/03-7827049739.webp" alt="Jain Lab photo 3" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="2"></figure><figure><img src="images/gallery/04-88f83b68e0.webp" alt="Jain Lab photo 4" title="" loading="lazy" decoding="async" width="1050" height="1400" data-i="3"></figure><figure><img src="images/gallery/05-1501267e4a.webp" alt="Jain Lab photo 5" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="4"></figure><figure><img src="images/gallery/06-0e4d26081f.webp" alt="Jain Lab photo 6" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="5"></figure><figure><img src="images/gallery/07-087cde6db7.webp" alt="Jain Lab photo 7" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="6"></figure><figure><img src="images/gallery/08-2cc02920af.webp" alt="Jain Lab photo 8" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="7"></figure><figure><img src="images/gallery/09-c302a08296.webp" alt="Jain Lab photo 9" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="8"></figure><figure><img src="images/gallery/10-d300286ae4.webp" alt="Jain Lab photo 10" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="9"></figure><figure><img src="images/gallery/11-f79947f4f7.webp" alt="Jain Lab photo 11" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="10"></figure><figure><img src="images/gallery/12-1937fcd526.webp" alt="Jain Lab photo 12" title="" loading="lazy" decoding="async" width="1050" height="1400" data-i="11"></figure><figure><img src="images/gallery/13-e2c8db220a.webp" alt="Jain Lab photo 13" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="12"></figure><figure><img src="images/gallery/14-5342cd7b28.webp" alt="Jain Lab photo 14" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="13"></figure><figure><img src="images/gallery/15-90ec9e8710.webp" alt="Jain Lab photo 15" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="14"></figure><figure><img src="images/gallery/16-e2a31f55d9.webp" alt="Jain Lab photo 16" title="" loading="lazy" decoding="async" width="1050" height="1400" data-i="15"></figure><figure><img src="images/gallery/17-865cc491c9.webp" alt="Jain Lab photo 17" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="16"></figure><figure><img src="images/gallery/18-495d2e32f5.webp" alt="Jain Lab photo 18" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="17"></figure><figure><img src="images/gallery/19-fa3e57d441.webp" alt="Jain Lab photo 19" title="" loading="lazy" decoding="async" width="720" height="514" data-i="18"></figure><figure><img src="images/gallery/20-5ebee5a2e3.webp" alt="Jain Lab photo 20" title="" loading="lazy" decoding="async" width="1400" height="1055" data-i="19"></figure><figure><img src="images/gallery/21-d7b85427bf.webp" alt="Jain Lab photo 21" title="" loading="lazy" decoding="async" width="1400" height="1055" data-i="20"></figure><figure><img src="images/gallery/22-b21414468d.webp" alt="Jain Lab photo 22" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="21"></figure><figure><img src="images/gallery/23-23b8bf3a85.webp" alt="Jain Lab photo 23" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="22"></figure><figure><img src="images/gallery/24-01c52b6036.webp" alt="Jain Lab photo 24" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="23"></figure><figure><img src="images/gallery/25-d14e67b000.webp" alt="Jain Lab photo 25" title="" loading="lazy" decoding="async" width="1050" height="1400" data-i="24"></figure><figure><img src="images/gallery/26-0e38f68ffd.webp" alt="Jain Lab photo 26" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="25"></figure><figure><img src="images/gallery/27-5cb3b87526.webp" alt="Jain Lab photo 27" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="26"></figure><figure><img src="images/gallery/28-f93e81eb6e.webp" alt="Jain Lab photo 28" title="" loading="lazy" decoding="async" width="1054" height="1400" data-i="27"></figure><figure><img src="images/gallery/29-4773fc48ac.webp" alt="Jain Lab photo 29" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="28"></figure><figure><img src="images/gallery/30-791a63f67b.webp" alt="Jain Lab photo 30" title="" loading="lazy" decoding="async" width="1400" height="788" data-i="29"></figure><figure><img src="images/gallery/31-f76aedd42d.webp" alt="Jain Lab photo 31" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="30"></figure><figure><img src="images/gallery/32-1519a72b65.webp" alt="Jain Lab photo 32" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="31"></figure><figure><img src="images/gallery/33-5048405851.webp" alt="Jain Lab photo 33" title="" loading="lazy" decoding="async" width="1050" height="1400" data-i="32"></figure><figure><img src="images/gallery/34-bc832805c8.webp" alt="Jain Lab photo 34" title="" loading="lazy" decoding="async" width="1400" height="933" data-i="33"></figure><figure><img src="images/gallery/35-65f42a1942.webp" alt="Jain Lab photo 35" title="" loading="lazy" decoding="async" width="1050" height="1400" data-i="34"></figure><figure><img src="images/gallery/36-646c999d65.webp" alt="Jain Lab photo 36" title="" loading="lazy" decoding="async" width="1400" height="933" data-i="35"></figure><figure><img src="images/gallery/37-1faf561f6e.webp" alt="Jain Lab photo 37" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="36"></figure><figure><img src="images/gallery/38-c3f287d52a.webp" alt="Jain Lab photo 38" title="" loading="lazy" decoding="async" width="1400" height="933" data-i="37"></figure><figure><img src="images/gallery/39-e6511cf8a3.webp" alt="Jain Lab photo 39" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="38"></figure><figure><img src="images/gallery/40-63af586c18.webp" alt="Jain Lab photo 40" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="39"></figure><figure><img src="images/gallery/41-3e059421a9.webp" alt="Jain Lab photo 41" title="" loading="lazy" decoding="async" width="836" height="467" data-i="40"></figure><figure><img src="images/gallery/42-e60a85b259.webp" alt="Jain Lab photo 42" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="41"></figure><figure><img src="images/gallery/43-4a02d32efa.webp" alt="Jain Lab photo 43" title="" loading="lazy" decoding="async" width="720" height="540" data-i="42"></figure><figure><img src="images/gallery/44-bc0a38717d.webp" alt="Jain Lab photo 44" title="" loading="lazy" decoding="async" width="1400" height="931" data-i="43"></figure><figure><img src="images/gallery/45-e7fd6f4f06.webp" alt="Jain Lab photo 45" title="" loading="lazy" decoding="async" width="1400" height="931" data-i="44"></figure><figure><img src="images/gallery/46-f9bb1ec08f.webp" alt="Jain Lab photo 46" title="" loading="lazy" decoding="async" width="1050" height="1400" data-i="45"></figure><figure><img src="images/gallery/47-dfeb799e7a.webp" alt="Jain Lab photo 47" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="46"></figure><figure><img src="images/gallery/48-533170fda9.webp" alt="Jain Lab photo 48" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="47"></figure><figure><img src="images/gallery/49-894f476640.webp" alt="Jain Lab photo 49" title="" loading="lazy" decoding="async" width="1050" height="1400" data-i="48"></figure><figure><img src="images/gallery/50-bac900a358.webp" alt="Jain Lab photo 50" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="49"></figure><figure><img src="images/gallery/51-5823c2c2c3.webp" alt="Jain Lab photo 51" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="50"></figure><figure><img src="images/gallery/52-00f790dd69.webp" alt="Jain Lab photo 52" title="" loading="lazy" decoding="async" width="1267" height="846" data-i="51"></figure><figure><img src="images/gallery/53-540ae420f6.webp" alt="Jain Lab photo 53" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="52"></figure><figure><img src="images/gallery/54-bf8fdcf689.webp" alt="Jain Lab photo 54" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="53"></figure><figure><img src="images/gallery/55-67d1178497.webp" alt="Jain Lab photo 55" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="54"></figure><figure><img src="images/gallery/56-a76d28276d.webp" alt="Jain Lab photo 56" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="55"></figure><figure><img src="images/gallery/57-844babfc3c.webp" alt="Jain Lab photo 57" title="" loading="lazy" decoding="async" width="1400" height="848" data-i="56"></figure><figure><img src="images/gallery/58-706f4217c1.webp" alt="Jain Lab photo 58" title="" loading="lazy" decoding="async" width="1400" height="1052" data-i="57"></figure><figure><img src="images/gallery/59-1d453c6869.webp" alt="Jain Lab photo 59" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="58"></figure><figure><img src="images/gallery/60-d94707e5a4.webp" alt="Jain Lab photo 60" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="59"></figure><figure><img src="images/gallery/61-c4e97b3faf.webp" alt="Jain Lab photo 61" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="60"></figure><figure><img src="images/gallery/62-5671da4f3d.webp" alt="Jain Lab photo 62" title="" loading="lazy" decoding="async" width="1400" height="933" data-i="61"></figure><figure><img src="images/gallery/63-ce0b5af0d6.webp" alt="Jain Lab photo 63" title="" loading="lazy" decoding="async" width="1400" height="933" data-i="62"></figure><figure><img src="images/gallery/64-448ec46ea4.webp" alt="Jain Lab photo 64" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="63"></figure><figure><img src="images/gallery/65-f4ecc09198.webp" alt="Jain Lab photo 65" title="" loading="lazy" decoding="async" width="1267" height="846" data-i="64"></figure><figure><img src="images/gallery/66-e77613e953.webp" alt="Jain Lab photo 66" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="65"></figure><figure><img src="images/gallery/67-b8b4bbabd0.webp" alt="Jain Lab photo 67" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="66"></figure><figure><img src="images/gallery/68-11eb58a46e.webp" alt="Jain Lab photo 68" title="" loading="lazy" decoding="async" width="1050" height="1400" data-i="67"></figure><figure><img src="images/gallery/69-93a2646ee0.webp" alt="Jain Lab photo 69" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="68"></figure><figure><img src="images/gallery/70-278a0fa488.webp" alt="Jain Lab photo 70" title="" loading="lazy" decoding="async" width="1267" height="846" data-i="69"></figure><figure><img src="images/gallery/71-5b3942c8bd.webp" alt="Jain Lab photo 71" title="" loading="lazy" decoding="async" width="1267" height="846" data-i="70"></figure><figure><img src="images/gallery/72-b7211327d5.webp" alt="Jain Lab photo 72" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="71"></figure><figure><img src="images/gallery/73-7d5969f42f.webp" alt="Jain Lab photo 73" title="" loading="lazy" decoding="async" width="1400" height="1050" data-i="72"></figure><figure><img src="images/gallery/74-baaf5ad5a6.webp" alt="Jain Lab photo 74" title="" loading="lazy" decoding="async" width="1352" height="761" data-i="73"></figure><figure><img src="images/gallery/75-3d12de4f88.webp" alt="Jain Lab photo 75" title="" loading="lazy" decoding="async" width="481" height="640" data-i="74"></figure></div>
+  </div>
+</main>
+<dialog class="lightbox" id="lightbox">
+      <button class="lb-nav lb-prev" aria-label="Previous photo">‹</button>
+      <figure class="lb-stage">
+        <img alt="">
+        <figcaption class="lb-cap"></figcaption>
+      </figure>
+      <button class="lb-nav lb-next" aria-label="Next photo">›</button>
+      <button class="lb-close" aria-label="Close">✕</button></dialog>
+</section>
+<section data-static-view="contact">
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <div class="kicker">Contact</div>
+      <h1>Join the lab</h1>
+      <p id="join-blurb">We are looking for excited, motivated and curious new lab members — graduate students, visiting students, clinical fellows and post-docs — to join our team. Graduate students from UCSF, Stanford and Berkeley graduate programs are encouraged to apply.</p>
+    </div>
+  </div>
+  <section class="block">
+    <div class="wrap contact-grid">
+      <div>
+        <h2 style="font-size:1.3rem;margin-bottom:24px">How to apply</h2>
+        <ol class="steps" id="apply-steps"><li><strong>Post-docs:</strong> send a CV, a short description of past and current research interests, key publications, and 3 reference contacts.</li><li><strong>Graduate students:</strong> apply through your Bay Area program and reach out about rotations.</li><li><strong>Everyone else:</strong> email us describing your research interests.</li></ol>
+      </div>
+      <div>
+        <h2 style="font-size:1.3rem;margin-bottom:24px">Email</h2>
+        <div id="contact-emails">
+        <div class="card" style="margin-bottom:20px">
+          <h3>PI Email</h3>
+          <a class="email-big" href="mailto:Isha.Jain@arcinstitute.org">Isha.Jain@arcinstitute.org</a>
+        </div>
+        <div class="card" style="margin-bottom:20px">
+          <h3>Administrative Assistant Email</h3>
+          <a class="email-big" href="mailto:Emma.Straight@gladstone.ucsf.edu">Emma.Straight@gladstone.ucsf.edu</a>
+        </div></div>
+      </div>
+      <div>
+        <h2 style="font-size:1.3rem;margin-bottom:24px">Visit us</h2>
+        <div id="contact-addresses">
+        <div class="card">
+          <h3>Arc Address</h3>
+          <address>Jain Lab<br>Arc Institute<br>3181 Porter Dr<br>Palo Alto, CA 94304</address>
+          <p style="margin:16px 0 0">
+            <a href="https://maps.google.com/?q=3181%20Porter%20Dr%2C%20Palo%20Alto%2C%20CA%2094304" target="_blank" rel="noopener">Open in Maps →</a>
+          </p>
+        </div>
+        <div class="card">
+          <h3>Gladstone Address</h3>
+          <address>Jain Lab<br>Gladstone Institutes, 4th Floor<br>1650 Owens St.<br>San Francisco, CA 94158</address>
+          <p style="margin:16px 0 0">
+            <a href="https://maps.google.com/?q=1650%20Owens%20St%2C%20San%20Francisco%2C%20CA%2094158" target="_blank" rel="noopener">Open in Maps →</a>
+          </p>
+        </div></div>
+      </div>
+    </div>
+  </section>
+  <div style="height:40px"></div>
+</main>
+</section>
+</noscript>
 
 <!-- ---------- content: the data/*.js files, unchanged ---------- -->
 <script>
