@@ -1100,15 +1100,6 @@ dialog.lightbox::backdrop { background: rgba(11,47,71,.94); }
         </div>
       </article>
       <article class="person">
-        <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_414af7f5f2a945eb9c4ec5e2d85d631c~mv2.jpeg/v1/crop/x_175,y_86,w_568,h_632/fill/w_215,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/092D428C-18AF-4A72-B621-A086BF3CD5FE_1_105_c.jpeg" alt="Will Flanigan" loading="lazy" data-initials="WF" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
-        <div class="info">
-          <h3 class="nm">Will Flanigan, BS</h3>
-          <div class="rl">Bioengineering Graduate Student</div>
-          <div class="tags"><span class="tag">NIH F31 Fellow</span></div>
-          <p class="bio">Will was born and raised in Madison, Wisconsin. He attended UW-Madison, earning his BS in Biomedical Engineering and Biochemistry. There, he worked in the lab of Dr. Pam Kreeger studying the microenvironmental factors that drive metastasis in ovarian cancer. At UCSF, Will is excited to investigate cardiac hypoxia/ischemia using iPSC-derived cardiac cell types. Outside of lab, Will loves to run and is learning how to make the perfect charcuterie board.</p>
-        </div>
-      </article>
-      <article class="person">
         <div class="ph"><img src="https://static.wixstatic.com/media/8e7e6b_95e1089dcd82442c9c45492a726329cc~mv2.jpg/v1/crop/x_2128,y_201,w_1837,h_1847/fill/w_210,h_211,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/455A2205_JPG.jpg" alt="Helen Huynh" loading="lazy" data-initials="HH" onerror="this.onerror=null;var d=this.parentNode;d.classList.add('empty');d.textContent=this.dataset.initials;"></div>
         <div class="info">
           <h3 class="nm">Helen Huynh, BS, MS</h3>
@@ -1181,6 +1172,14 @@ dialog.lightbox::backdrop { background: rgba(11,47,71,.94); }
     <div class="wrap">
       <div class="section-head"><h2>Alumni</h2></div>
       <div class="alumni-list" id="alumni-root">
+        <div class="alum">
+          <div>
+            <div class="nm">Will Flanigan, BS</div>
+            <div class="rl">Bioengineering Graduate Student</div>
+          </div>
+          <div class="dt">Jun 2021 – May 2026</div>
+          <div class="nw"><span>Now</span>Scientist, Cellanome</div>
+        </div>
         <div class="alum">
           <div>
             <div class="nm">Alan Baik, MD</div>
@@ -1893,16 +1892,6 @@ const TEAM = [
   },
   {
     group: "Graduate Students",
-    name: "Will Flanigan",
-    creds: "BS",
-    pronouns: "he/him",
-    role: "Bioengineering Graduate Student",
-    tags: ["NIH F31 Fellow"],
-    photo: "https://static.wixstatic.com/media/8e7e6b_414af7f5f2a945eb9c4ec5e2d85d631c~mv2.jpeg/v1/crop/x_175,y_86,w_568,h_632/fill/w_215,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/092D428C-18AF-4A72-B621-A086BF3CD5FE_1_105_c.jpeg",
-    bio: "Will was born and raised in Madison, Wisconsin. He attended UW-Madison, earning his BS in Biomedical Engineering and Biochemistry. There, he worked in the lab of Dr. Pam Kreeger studying the microenvironmental factors that drive metastasis in ovarian cancer. At UCSF, Will is excited to investigate cardiac hypoxia/ischemia using iPSC-derived cardiac cell types. Outside of lab, Will loves to run and is learning how to make the perfect charcuterie board.",
-  },
-  {
-    group: "Graduate Students",
     name: "Helen Huynh",
     creds: "BS, MS",
     pronouns: "she/her",
@@ -1982,6 +1971,7 @@ const TEAM = [
    ============================================================ */
 
 const ALUMNI = [
+  { name: "Will Flanigan",         creds: "BS",  role: "Bioengineering Graduate Student", dates: "Jun 2021 – May 2026", now: "Scientist, Cellanome" },
   { name: "Alan Baik",             creds: "MD",  role: "Postdoctoral Fellow",       dates: "Dec 2020 – Feb 2026",  now: "Assistant Professor / PI, UCSF", nowHref: "https://www.baik-lab.com", nowLabel: "Baik Lab" },
   { name: "Tej Joshi",             creds: "BS",  role: "Research Associate",         dates: "Jul 2023 – Feb 2026",  now: "Medical Student, Boston University School of Medicine" },
   { name: "Onurkan Karabulut",     creds: "",    role: "CIRM Intern",                dates: "Aug 2023 – Aug 2024",  now: "Undergraduate Student in Molecular and Cell Biology, UC San Diego" },
